@@ -91,3 +91,9 @@ $('.scroll-to-top').click(function(e) {
     }, 800);
 
 });
+
+
+$(window).load(function() {
+    $('#preloader').fadeOut('slow');
+    $('body').css({'overflow':'visible'});
+})

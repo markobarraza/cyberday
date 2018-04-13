@@ -1,5 +1,6 @@
 .header_main {
     z-index: 1000;
+    top: 0;
     //Logotipo
     & .brand-logo {
         //min-height: 64px;
@@ -19,8 +20,8 @@
         box-shadow: none;
         transition: all .4s ease-out;
     }
-    & .menu-fixed {
-        
+    & .menu-fixed {        
+        top: 0;
     }
     //Menu Main Desktop
     & .nav-desktop {

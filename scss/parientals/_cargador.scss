@@ -1,0 +1,33 @@
+#preloader {
+	width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    z-index: 10000;
+    background-color: $redPolar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+#cargador {
+    width: 100px;
+    animation: cargador 1s ease-in-out infinite alternate; /* Standard syntax */
+}
+
+@keyframes cargador {
+    0% {
+        opacity: 1; 
+        transform: rotateX(0); /* Standard syntax */
+        transform: rotateY(0); /* Standard syntax */
+    }      
+    50% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1; 
+        transform: rotateX(360deg); /* Standard syntax */
+        transform: rotateY(360deg); /* Standard syntax */
+    }
+}
+
