@@ -2,7 +2,7 @@
 	width: 100%;
     min-height: 100vh;
     margin: auto;
-    z-index: 10000;
+    z-index: 950;
     background-color: $redPolar;
     display: flex;
     justify-content: center;
@@ -13,6 +13,9 @@
 #cargador {
     width: 100px;
     animation: cargador 1s ease-in-out infinite alternate; /* Standard syntax */
+    @media screen and (max-width:480px) {
+        width: 70px;
+    }
 }
 
 @keyframes cargador {

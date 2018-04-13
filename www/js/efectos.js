@@ -92,7 +92,7 @@ $('.scroll-to-top').click(function(e) {
 
 });
 
-
+//Cargador
 $(window).load(function() {
     $('#preloader').fadeOut('slow');
     $('body').css({'overflow':'visible'});
