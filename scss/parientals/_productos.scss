@@ -337,12 +337,13 @@
             margin: 0;
             margin-bottom: 10px;
             & .tags {
-                font-size: 10px;
+                font-size: 9px;
                 margin-right: 5px;
                 background: white;
                 line-height: normal;
                 padding: 5px;
                 border-radius: 3px;
+                text-transform: uppercase;
             }
             & .marca {
                 border: 1px solid $blackPolar;
@@ -395,15 +396,15 @@
 .box-caluga {
     position: relative;
     border-bottom: none;
+    overflow: visible;
     @media screen and (max-width:321px) {
         min-height: 330px!important;
     }
         & .link-product {
             display: block;
-            overflow: visible;
             height: 100%;
             position: relative;
-        & .calugas-container {
+            & .calugas-container {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -434,6 +435,30 @@
                 }
             }
         }
+        & .icon-plus-product {
+            bottom: -30px;
+            visibility: hidden;
+            opacity: 0;
+            transition: $transition1;
+            @media screen and (max-width:1440px) {
+                bottom: -40px;
+            }
+            @media screen and (max-width:480px) {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
     }
+}
+.box-caluga:hover {
+    box-shadow: none;
+    z-index: inherit;
+    background: transparent;
+}
+.box-caluga:hover .icon-plus-product {
+    visibility: visible;
+    opacity: 1;
+    color: $redPolar;
+    font-size: 2rem;
 }
 
