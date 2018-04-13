@@ -1,0 +1,380 @@
+
+.main-container-category {
+    width: 100%;
+    padding: 0 10px 0 10px;
+    @media screen and (max-width:768px) {
+     //width: 90%;
+    }
+}
+//Linea solo para el primer title
+.main-container-category:nth-of-type(1) .title-section {
+    border-top: 1px solid $lineColor;
+    background-image: url(../img/productos/bg-title.jpg);
+    background-position: right;
+}
+.main-container-category:nth-of-type(2) .title-section {
+    border-top: 1px solid $lineColor;
+    background-image: url(../img/productos/bg-title-2.jpg);
+    background-position: left;
+}
+//TITLE SECTION
+.title-section  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+    background: $titleBack;
+    border-left: $lineColor solid 1px;
+    border-right: $lineColor solid 1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    //background-image: none!important;
+    @media screen and (max-width:768px) {
+    min-height: 200px;
+    }
+    & h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        margin: 0 2rem;
+        @media screen and (max-width:768px) {
+        font-size: 1.5rem;
+        color: $blackPolar;
+        letter-spacing: 5px;
+        }
+        @media screen and (max-width:1440px) {
+        font-size: 1.8rem;
+        }
+    }
+    & .icons-title {
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        width: 30%;
+        @media screen and (max-width:1440px) {
+            width: 40%;
+        }
+        & .iconos {
+            font-size: 1.8rem;
+            text-align: center;
+            color: black!important;
+            //background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            padding: 15px;
+            border-radius: 50%;
+            @media screen and (max-width:780px) {
+                font-size: 1.5rem
+                }
+        }
+    }
+}
+
+
+//NEW STYLE PRODUCT
+.container-productos {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    margin-bottom: 0!important;
+}
+
+.box-product {
+    position: relative;
+    border: solid 1px $lineColor;
+    padding: 0;
+    padding: 1.5rem!important;
+    //Tags Procentaje
+    & .porcentaje {
+        position: absolute;
+        background: $redPolar;
+        left: -10px;
+        top: 10px;
+        width: 55px;
+        height: 55px;
+        color: white;
+        line-height: 1rem;
+        font-weight: 500;
+        border-radius: 0 5px 5px 0;
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 20;
+        font-size: .9rem;
+        & .number-porcentaje {
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 1rem;
+            margin-bottom: 3px;
+        }
+    }
+    & .porcentaje::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        border-width: 5px;
+        border-style: solid;
+        bottom: -10px;
+        border-color: #940516 #940516 transparent transparent;
+    }
+    //Tags Agotado
+    & .agotado {
+        @extend .porcentaje;
+        width: 90px;
+        height: 30px;
+    }
+    & .container-agotado {
+        background: rgba(255, 255, 255, 0.7);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 0!important;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        overflow: hidden;
+        //STANDAR AGOTADO
+        & .standar-agotado {
+            width: 115%;
+            top: 35%;
+            height: auto;
+            line-height: 50px;
+            position: absolute;
+            transform: translateY(-10%) rotate(5deg);
+            letter-spacing: 5px;
+            font-weight: 600;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            background: $redPolar;
+            color: $whitePolar;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 20;
+            font-size: 1rem;
+            @media screen and (max-width:321px) {
+                font-size: .8rem;
+            }
+            & i {
+                display: inline-block;
+            }
+        }
+        & .text-agotado {
+            @extend .standar-agotado;
+            transform: translateY(100px) rotate(-5deg);
+            top: 20%;
+            background: $blackPolar;
+            font-size: .8rem;
+            z-index: 10;
+            text-align: left;
+            letter-spacing: 3px;
+            @media screen and (max-width:480px) {
+                font-size: .65rem;
+                letter-spacing:1px;
+            }
+            @media screen and (max-width:321px) {
+                font-size: .7rem;
+                letter-spacing: 0;
+            }
+            & i {
+                display: inline-block;
+                font-size: 1.5rem;
+                margin-right: 5px;
+                align-self: center;
+                @media screen and (max-width:480px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        //RELACIONADO AGOTADO
+        & .product-relacionado {
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            padding: 1rem;
+            border-top: 3px solid $redPolar;
+            position: relative;
+            & .icon-relacionado {
+                position: absolute;
+                top: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: $redPolar;
+                color: white;
+                padding: .8rem;
+                font-weight: 600;
+                border-radius: 50%;
+                font-size: 1.2rem;
+                box-shadow: 0 5px 20px  rgba(0, 0, 0, 0.3)
+            }
+            @media screen and (max-width:480px) {
+                flex-wrap: wrap;
+            }
+            & .img-relacionado {
+                max-width: 120px;
+                margin-right: 1rem;
+            }
+            & .content-relacionado {
+                text-align: left;
+                color: $blackPolar;
+                flex-direction: column;
+                position: relative;
+                align-items: flex-start;
+                & .text-relacionado {
+                    font-size: 1rem;
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+                & .link-relacionado {
+                    font-size: .9rem;
+                    color: $redPolar;
+                    padding: 0 1rem;
+                    line-height: 25px;
+                    border: 2px solid $redPolar;
+                    font-size: .8rem;
+                    border-radius: 15px;
+                    font-weight: 600;
+                    transition: all .4s ease-out;
+                }
+                & .link-relacionado:hover {
+                    border: 2px solid $redPolar;
+                    background: $redPolar;
+                    color: $whitePolar;
+                }
+            }
+        }
+    }
+    //Link Contenedor Producto
+    & .link-product {
+        padding: 0;
+        color: $blackPolar;
+        text-align: left;
+        font-weight: 500;
+        position: relative;
+        //Imagen Producto
+        & .image {
+            position: relative;
+            @media screen and (max-width:768px) {
+                min-height: auto;
+            }
+            & .product-image {
+                max-width: 200px;
+                width: 100%;
+                min-height: 200px;
+                margin: auto;
+                position: relative;
+                display: block;
+                color: grey;
+                text-align: center;
+                background:transparent url(https://tienda.lapolar.cl/images/load.gif) center no-repeat !important;
+                background-size: cover !important;
+                background-color: transparent !important;
+                @media screen and (max-width:768px) {
+                    max-width: 100%;
+                    min-height: auto;
+                }
+            }
+        }
+        //Tags Despacho - Stock - Cuotas
+        & .tags-main {
+            align-items: center;
+            justify-content: space-around;
+            flex: auto;
+            margin: 0;
+            margin-bottom: 1rem;
+            & .tags {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background: $lineColor;
+                margin: 0;
+                text-align: center;
+                line-height: normal;
+                width: 60px;
+                height: 60px;
+                font-weight: 500;
+                border-radius: 50%;
+                & p {
+                    font-size: 9px;
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+                & p.small {
+                    font-size: 7px;
+                }
+                & p.medium {
+                    font-size: 10px;
+                }
+                & p.big {
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+                & .icon-truck {
+                    font-size: 20px;
+                }
+            }
+            & .tags-stock-active {
+                background: $redPolar;
+                color: white;
+            }
+        }
+        //Tags Marca - Producto Cyber
+        & .tags-first {
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin: 0;
+            margin-bottom: 10px;
+            & .tags {
+                font-size: 10px;
+                margin-right: 5px;
+                background: white;
+                line-height: normal;
+                padding: 5px;
+                border-radius: 3px;
+            }
+            & .marca {
+                border: 1px solid $blackPolar;
+            }
+            & .product-cyber {
+                border: 1px solid $cyber;
+                color: $cyber;
+            }
+        }
+        //Descripcion
+        & .description {
+            font-size: 16px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        & .price-oferta {
+            font-size: 25px;
+            margin: 0;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        & .normal-price {
+            font-size: 12px;
+            margin: 0;
+        }
+        & span {
+            margin: 0;
+        }
+        & .icon-plus-product {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 1.5rem;
+            color: #ccc;
+        }
+    }
+}
+

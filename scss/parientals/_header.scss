@@ -1,0 +1,73 @@
+.header_main {
+    z-index: 1000;
+    //Logotipo
+    & .brand-logo {
+        //min-height: 64px;
+        & img {
+            width: 55px;
+            margin-top: 5px;
+            margin-left: 10px;
+            @media screen and (max-width:480px) {
+                margin-top: 0;
+                margin-left: 0;
+                width: 50px;
+                padding-top: 4px;
+            }
+        }
+    }
+    & .nav-menu {
+        box-shadow: none;
+        transition: all .4s ease-out;
+    }
+    & .menu-fixed {
+        
+    }
+    //Menu Main Desktop
+    & .nav-desktop {
+        & .link-menu-desktop {
+            font-weight: 500;
+            //text-transform: uppercase;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            & .icon-link {
+                margin-right: .5rem;
+                font-weight: 400;
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                font-size: 1.5rem;
+                text-align: center;
+                color: gray;
+                transition: all .4s;
+            }
+            & .icon-link-active {
+                background: $cyber;
+                border-radius: 50%;
+                color: $whitePolar;
+            }
+        }
+        & .link-menu-desktop:hover .icon-link {
+            color: $whitePolar;
+        }
+    }
+    //Menu Main Mobile
+    & .nav-mobile {
+        background: $blackPolar;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & .link-menu-mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & .icon-link {
+                line-height: inherit;
+            }
+        }
+    }
+
+}
