@@ -377,13 +377,19 @@
             right: 0;
             font-size: 1.5rem;
             color: #ccc;
+            transition: $transition1;
+            display: inline-block;
         }
     }
 }
 .box-product:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    background: $whitePolar;
     z-index: 100;
-    background: white;
+}
+.box-product:hover .icon-plus-product {
+    color: $redPolar;
+    font-size: 2rem;
 }
 //Calugas 
 .box-caluga {
