@@ -20,17 +20,15 @@
 
 @keyframes cargador {
     0% {
-        opacity: 1; 
-        transform: rotateX(0); /* Standard syntax */
-        transform: rotateY(0); /* Standard syntax */
+        opacity: 1;
+        transform: scale(1); 
     }      
     50% {
-        opacity: .2;
+        opacity: .5;
     }
     100% {
-        opacity: 1; 
-        transform: rotateX(360deg); /* Standard syntax */
-        transform: rotateY(360deg); /* Standard syntax */
+        opacity: 1;
+        transform: scale(.80); 
     }
 }
 

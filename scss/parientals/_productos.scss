@@ -1,20 +1,18 @@
 
 .main-container-category {
     width: 100%;
-    padding: 0 10px 0 10px;
+    //padding: 0 10px 0 10px;
     @media screen and (max-width:768px) {
      //width: 90%;
     }
 }
 //BG + LINEA TECNOLOGIA
 .main-container-category:nth-of-type(1) .title-section {
-    border-top: 1px solid $lineColor;
     background-image: url(../img/bg-title/bg-title.jpg);
     background-position: right;
 }
 //BG LINEA BLANCA
 .main-container-category:nth-of-type(2) .title-section {
-    border-top: 1px solid $lineColor;
     background-image: url(../img/bg-title/bg-title-2.jpg);
     background-position: left;
 }
@@ -24,18 +22,19 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
     background: $blackPolar;
-    border-left: $lineColor solid 1px;
-    border-right: $lineColor solid 1px;
+    //border-left: $lineColor solid 1px;
+    //border-right: $lineColor solid 1px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 0 -20px 100px rgba(0, 0, 0, 0.5) inset;
     @media screen and (max-width:768px) {
-    min-height: 200px;
+    min-height: 250px;
     }
     @media screen and (max-width:480px) {
-        background-image: none!important;
+        background-attachment: inherit;
     }
     & h1 {
         font-size: 2rem;
@@ -80,6 +79,10 @@
     margin-left: 0!important;
     margin-right: 0!important;
     margin-bottom: 0!important;
+    padding: 0 10px 0 10px;
+    @media screen and (max-width:480px) {
+        padding: 0;
+    }
 }
 
 .box-product {
@@ -88,12 +91,17 @@
     padding: 0;
     padding: 1.5rem!important;
     transition: $transition1;
+    @media screen and (max-width:480px) {
+        border: none;
+        padding: 1rem!important;
+        box-shadow: 0 1px 1px $lineColor inset, 0 1px 1px $lineColor;
+    }
     //Tags Procentaje
     & .porcentaje {
         position: absolute;
         background: $redPolar;
         left: -10px;
-        top: 10px;
+        top: 15px;
         width: 55px;
         height: 55px;
         color: white;
@@ -108,11 +116,21 @@
         flex-direction: column;
         z-index: 20;
         font-size: .9rem;
+        @media screen and (max-width:480px) {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            font-size: .7rem;
+            left: 0;
+        }
         & .number-porcentaje {
             font-size: 1.3rem;
             font-weight: 600;
             line-height: 1rem;
             margin-bottom: 3px;
+            @media screen and (max-width:480px) {
+                font-size: 1rem;
+            }
         }
     }
     & .porcentaje::before {
@@ -123,6 +141,9 @@
         border-style: solid;
         bottom: -10px;
         border-color: #940516 #940516 transparent transparent;
+        @media screen and (max-width:480px) {
+         display: none;
+        }
     }
     //Tags Agotado
     & .agotado {
@@ -144,6 +165,9 @@
         align-items: center;
         padding: 0;
         overflow: hidden;
+        @media screen and (max-width:480px) {
+            box-shadow: 0 1px 1px $lineColor inset, 0 1px 1px $lineColor;
+        }
         //STANDAR AGOTADO
         & .standar-agotado {
             width: 115%;
@@ -292,6 +316,9 @@
             flex: auto;
             margin: 0;
             margin-bottom: 1rem;
+            @media screen and (max-width:480px) {
+                display: none;
+            }
             & .tags {
                 display: flex;
                 align-items: center;
@@ -339,10 +366,12 @@
             & .tags {
                 font-size: 9px;
                 margin-right: 5px;
-                background: white;
+                background: $blackPolar;
+                color: $whitePolar;
                 line-height: normal;
-                padding: 5px;
+                padding: 3px;
                 border-radius: 3px;
+                font-weight: 600;
                 text-transform: uppercase;
             }
             & .marca {
@@ -350,7 +379,10 @@
             }
             & .product-cyber {
                 border: 1px solid $cyber;
-                color: $cyber;
+                background: $cyber;
+                @media screen and (max-width:480px) {
+                    font-size: 7px;
+                }
             }
         }
         //Descripcion
@@ -358,16 +390,30 @@
             font-size: 16px;
             margin: 0;
             margin-bottom: 10px;
+            min-height: 50px;
+            @media screen and (max-width:480px) {
+                font-size: 14px;
+               }
         }
         & .price-oferta {
             font-size: 25px;
             margin: 0;
             font-weight: 500;
             margin-bottom: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            @media screen and (max-width:480px) {
+                font-size: 17px;
+            }
         }
         & .normal-price {
             font-size: 12px;
             margin: 0;
+            @media screen and (max-width:480px) {
+                font-size: 10px;
+                display: none;
+            }
         }
         & span {
             margin: 0;
@@ -380,6 +426,9 @@
             color: #ccc;
             transition: $transition1;
             display: inline-block;
+            @media screen and (max-width:480px) {
+                font-size: 1.2rem;
+            } 
         }
     }
 }
@@ -390,13 +439,99 @@
 }
 .box-product:hover .icon-plus-product {
     color: $redPolar;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    @media screen and (max-width:480px) {
+        font-size: 1.2rem;
+    }
+}
+//Botones 
+.cont-btns {
+    border-right: 1px solid $lineColor;
+    border-left: 1px solid $lineColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0!important;
+        @media screen and (max-width:480px) {
+            border-left: none;
+            border-right: none;
+        }
+    & .btn-a {
+        width: 100%;
+        font-size: 1.2rem;
+        letter-spacing: 3px;
+        line-height: 180px;
+        display: block;
+        transition: $transition1;
+        @media screen and (max-width:480px) {
+            font-size: 1rem;
+            letter-spacing: 2px;
+            line-height: normal;
+            padding: 2.5rem 0;
+            padding-left: 5%;
+            border-top: 1px solid $lineColor;
+            text-align: left;
+        }
+        @media screen and (max-width:321px) {
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        & .btn-floating {
+            box-shadow: none;
+            @media screen and (max-width:480px) {
+                width: 45px;
+                height: 45px;
+                position: absolute;
+                right: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+                & i {
+                    line-height: 45px;
+                }
+            }
+            @media screen and (max-width:321px) {
+                width: 40px;
+                height: 40px;
+                & i {
+                    line-height: 40px;
+                    top: -2px;
+                    left: 1px;
+                    position: relative;
+                }
+            }
+        }
+        & .btn-floating:hover {
+            background: $redPolar;
+        }
+    }
+    //Hover Boton 1
+    & .btn-a:hover {
+        background: $redPolar;
+        color: white;
+    }
+    //Hover Boton 1
+    & .btn-a:hover .btn-floating {
+        background: $whitePolar;
+        & i {
+            color: $redPolar;
+        }
+    }
+    //Hover Boton 2
+    & .btn-a:nth-child(2):hover {
+        background: $cyber;
+        color: white;
+        & i {
+            color: $cyber;
+        }
+    }
 }
 //Calugas 
 .box-caluga {
     position: relative;
     border-bottom: none;
-    overflow: visible;
+    @media screen and (max-width:480px) {
+        //border-bottom: 1px solid $lineColor;
+    }
     @media screen and (max-width:321px) {
         min-height: 330px!important;
     }
@@ -410,7 +545,7 @@
             align-items: center;
             @media screen and (max-width:480px) {
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: space-around;
             }
             @media screen and (max-width:321px) {
                 flex-direction: column;
@@ -440,8 +575,9 @@
             visibility: hidden;
             opacity: 0;
             transition: $transition1;
+            display: none;
             @media screen and (max-width:1440px) {
-                bottom: -40px;
+                bottom: -40px;                
             }
             @media screen and (max-width:480px) {
                 opacity: 0;
@@ -459,6 +595,6 @@
     visibility: visible;
     opacity: 1;
     color: $redPolar;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
