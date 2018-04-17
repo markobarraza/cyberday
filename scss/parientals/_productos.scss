@@ -1,37 +1,36 @@
-
 .main-container-category {
     width: 100%;
-    //padding: 0 10px 0 10px;
-    @media screen and (max-width:768px) {
-     //width: 90%;
+    @media screen and (max-width: 768px) {
+        //width: 90%;
     }
 }
-//BG + LINEA TECNOLOGIA
+
+//BG TECNOLOGIA
 .main-container-category:nth-of-type(1) .title-section {
     background-image: url(../img/bg-title/bg-title.jpg);
     background-position: right;
 }
+
 //BG LINEA BLANCA
 .main-container-category:nth-of-type(2) .title-section {
     background-image: url(../img/bg-title/bg-title-2.jpg);
     background-position: left;
 }
+
 //TITLE SECTION
-.title-section  {
+.title-section {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 400px;
     background: $blackPolar;
-    //border-left: $lineColor solid 1px;
-    //border-right: $lineColor solid 1px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: 0 -20px 100px rgba(0, 0, 0, 0.5) inset;
-    @media screen and (max-width:768px) {
-    min-height: 250px;
+    @media screen and (max-width: 768px) {
+        min-height: 250px;
     }
     @media screen and (max-width:480px) {
         background-attachment: inherit;
@@ -43,12 +42,12 @@
         text-transform: uppercase;
         color: $whitePolar;
         margin: 0 2.5rem;
-        @media screen and (max-width:1440px) {
-        font-size: 1.8rem;
+        @media screen and (max-width: 1440px) {
+            font-size: 1.8rem;
         }
         @media screen and (max-width:768px) {
-        font-size: 1.5rem;
-        letter-spacing: 5px;
+            font-size: 1.5rem;
+            letter-spacing: 5px;
         }
     }
     & .icons-title {
@@ -56,57 +55,55 @@
         display: flex;
         align-items: center;
         width: 20%;
-        @media screen and (max-width:1440px) {
+        @media screen and (max-width: 1440px) {
             width: 20%;
         }
         & .iconos {
             font-size: 1.8rem;
             text-align: center;
-            color: white!important;
+            color: $whitePolar!important;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
             padding: 15px;
             border-radius: 50%;
-            @media screen and (max-width:1440px) {
+            @media screen and (max-width: 1440px) {
                 font-size: 1.5rem;
             }
         }
     }
 }
 
-
 //NEW STYLE PRODUCT
 .container-productos {
     margin-left: 0!important;
     margin-right: 0!important;
     margin-bottom: 0!important;
-    padding: 0 10px 0 10px;
-    @media screen and (max-width:480px) {
+    @media screen and (max-width: 480px) {
         padding: 0;
     }
 }
 
 .box-product {
     position: relative;
-    border: solid 1px $lineColor;
+    box-shadow: 0 1px 1px $lineColor inset, 0 1px 1px $lineColor;
     padding: 0;
     padding: 1.5rem!important;
     transition: $transition1;
-    @media screen and (max-width:480px) {
+    background: $whitePolar;
+    @media screen and (max-width: 480px) {
         border: none;
         padding: 1rem!important;
-        box-shadow: 0 1px 1px $lineColor inset, 0 1px 1px $lineColor;
     }
     //Tags Procentaje
     & .porcentaje {
         position: absolute;
         background: $redPolar;
-        left: -10px;
+        left: 0px;
         top: 15px;
         width: 55px;
         height: 55px;
         color: white;
         line-height: 1rem;
-        font-weight: 500;
+        font-weight: 600;
         border-radius: 0 5px 5px 0;
         text-align: center;
         text-transform: uppercase;
@@ -116,20 +113,20 @@
         flex-direction: column;
         z-index: 20;
         font-size: .9rem;
-        @media screen and (max-width:480px) {
+        @media screen and (max-width: 480px) {
             width: 40px;
             height: 40px;
-            border-radius: 5px;
             font-size: .7rem;
+            line-height: normal;
             left: 0;
         }
         & .number-porcentaje {
             font-size: 1.3rem;
-            font-weight: 600;
             line-height: 1rem;
             margin-bottom: 3px;
-            @media screen and (max-width:480px) {
+            @media screen and (max-width: 480px) {
                 font-size: 1rem;
+                margin-bottom: 0;
             }
         }
     }
@@ -141,8 +138,9 @@
         border-style: solid;
         bottom: -10px;
         border-color: #940516 #940516 transparent transparent;
-        @media screen and (max-width:480px) {
-         display: none;
+        display: none;
+        @media screen and (max-width: 480px) {
+            //display: none;
         }
     }
     //Tags Agotado
@@ -153,6 +151,7 @@
     }
     & .container-agotado {
         background: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 1px 1px $lineColor inset, 0 1px 1px $lineColor;
         height: 100%;
         width: 100%;
         position: absolute;
@@ -165,9 +164,7 @@
         align-items: center;
         padding: 0;
         overflow: hidden;
-        @media screen and (max-width:480px) {
-            box-shadow: 0 1px 1px $lineColor inset, 0 1px 1px $lineColor;
-        }
+        @media screen and (max-width: 480px) {}
         //STANDAR AGOTADO
         & .standar-agotado {
             width: 115%;
@@ -186,7 +183,7 @@
             justify-content: center;
             z-index: 20;
             font-size: 1rem;
-            @media screen and (max-width:321px) {
+            @media screen and (max-width: 321px) {
                 font-size: .8rem;
             }
             & i {
@@ -202,9 +199,10 @@
             z-index: 10;
             text-align: left;
             letter-spacing: 3px;
-            @media screen and (max-width:480px) {
+            @media screen and (max-width: 480px) {
                 font-size: .65rem;
-                letter-spacing:1px;
+                letter-spacing: 1px;
+                top: 10%;
             }
             @media screen and (max-width:321px) {
                 font-size: .7rem;
@@ -215,7 +213,7 @@
                 font-size: 1.5rem;
                 margin-right: 5px;
                 align-self: center;
-                @media screen and (max-width:480px) {
+                @media screen and (max-width: 480px) {
                     font-size: 1.2rem;
                 }
             }
@@ -239,7 +237,7 @@
                 font-weight: 600;
                 border-radius: 50%;
                 font-size: 1.2rem;
-                box-shadow: 0 5px 20px  rgba(0, 0, 0, 0.3)
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3)
             }
             @media screen and (max-width:480px) {
                 flex-wrap: wrap;
@@ -288,7 +286,7 @@
         //Imagen Producto
         & .image {
             position: relative;
-            @media screen and (max-width:768px) {
+            @media screen and (max-width: 768px) {
                 min-height: auto;
             }
             & .product-image {
@@ -300,10 +298,10 @@
                 display: block;
                 color: grey;
                 text-align: center;
-                background:transparent url(https://tienda.lapolar.cl/images/load.gif) center no-repeat !important;
+                background: transparent url(https://tienda.lapolar.cl/images/load.gif) center no-repeat !important;
                 background-size: cover !important;
                 background-color: transparent !important;
-                @media screen and (max-width:768px) {
+                @media screen and (max-width: 768px) {
                     max-width: 100%;
                     min-height: auto;
                 }
@@ -314,9 +312,13 @@
             align-items: center;
             justify-content: space-around;
             flex: auto;
+            display: flex;
             margin: 0;
+            min-height: 60px;
             margin-bottom: 1rem;
-            @media screen and (max-width:480px) {
+            //box-shadow: 0 0 0 2px $lineColor inset;
+            border-radius: 5px;
+            @media screen and (max-width: 480px) {
                 display: none;
             }
             & .tags {
@@ -324,14 +326,13 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                background: $lineColor;
                 margin: 0;
                 text-align: center;
                 line-height: normal;
-                width: 60px;
-                height: 60px;
+                flex: auto;
+                min-height: 20px;
                 font-weight: 500;
-                border-radius: 50%;
+                color: #ccc;
                 & p {
                     font-size: 9px;
                     margin: 0;
@@ -380,20 +381,20 @@
             & .product-cyber {
                 border: 1px solid $cyber;
                 background: $cyber;
-                @media screen and (max-width:480px) {
+                @media screen and (max-width: 480px) {
                     font-size: 7px;
                 }
             }
         }
         //Descripcion
         & .description {
-            font-size: 16px;
+            font-size: 15px;
             margin: 0;
             margin-bottom: 10px;
-            min-height: 50px;
-            @media screen and (max-width:480px) {
+            min-height: 55px;
+            @media screen and (max-width: 480px) {
                 font-size: 14px;
-               }
+            }
         }
         & .price-oferta {
             font-size: 25px;
@@ -403,16 +404,16 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            @media screen and (max-width:480px) {
+            @media screen and (max-width: 480px) {
                 font-size: 17px;
+                margin-bottom: 3px;
             }
         }
         & .normal-price {
             font-size: 12px;
             margin: 0;
-            @media screen and (max-width:480px) {
+            @media screen and (max-width: 480px) {
                 font-size: 10px;
-                display: none;
             }
         }
         & span {
@@ -426,124 +427,113 @@
             color: #ccc;
             transition: $transition1;
             display: inline-block;
-            @media screen and (max-width:480px) {
+            @media screen and (max-width: 480px) {
                 font-size: 1.2rem;
-            } 
+            }
         }
     }
 }
-.box-product:hover {
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-    background: $whitePolar;
-    z-index: 100;
+
+//HOVER BOX PRODUCTO
+.box-product:hover,
+.box-product-active {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.07);
+    z-index: 40;
+    transform: scale(1.03);
+    border-radius: 5px;
 }
+
 .box-product:hover .icon-plus-product {
     color: $redPolar;
-    font-size: 1.8rem;
-    @media screen and (max-width:480px) {
+    transform: rotate(180deg);
+    @media screen and (max-width: 480px) {
         font-size: 1.2rem;
     }
 }
+
+//HOVER BOX AGOTADO
+.box-agotado:hover {
+    box-shadow: none;
+    transform: none;
+}
+
+.box-agotado:hover .icon-plus-product {
+    opacity: 0;
+    transform: none;
+}
+
 //Botones 
 .cont-btns {
-    border-right: 1px solid $lineColor;
-    border-left: 1px solid $lineColor;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0!important;
-        @media screen and (max-width:480px) {
-            border-left: none;
-            border-right: none;
-        }
+    flex-wrap: wrap;
+    border: none;
+    @media screen and (max-width: 480px) {
+        border-left: none;
+        border-right: none;
+    }
     & .btn-a {
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1rem;
         letter-spacing: 3px;
-        line-height: 180px;
+        line-height: 100px;
         display: block;
+        font-weight: 600;
         transition: $transition1;
-        @media screen and (max-width:480px) {
+        box-shadow: 0 0 0 $cyber inset;
+        z-index: 100;
+        @media screen and (max-width: 480px) {
             font-size: 1rem;
             letter-spacing: 2px;
             line-height: normal;
-            padding: 2.5rem 0;
-            padding-left: 5%;
+            padding: 1.5rem 0;
             border-top: 1px solid $lineColor;
-            text-align: left;
+            text-align: center;
         }
         @media screen and (max-width:321px) {
             font-size: 1rem;
             letter-spacing: 1px;
         }
-        & .btn-floating {
-            box-shadow: none;
-            @media screen and (max-width:480px) {
-                width: 45px;
-                height: 45px;
-                position: absolute;
-                right: 5%;
-                top: 50%;
-                transform: translateY(-50%);
-                & i {
-                    line-height: 45px;
-                }
-            }
-            @media screen and (max-width:321px) {
-                width: 40px;
-                height: 40px;
-                & i {
-                    line-height: 40px;
-                    top: -2px;
-                    left: 1px;
-                    position: relative;
-                }
-            }
-        }
-        & .btn-floating:hover {
-            background: $redPolar;
+        & i {
+            font-size: 1.5rem;
+            position: relative;
+            top: 3px;
         }
     }
     //Hover Boton 1
     & .btn-a:hover {
-        background: $redPolar;
-        color: white;
-    }
-    //Hover Boton 1
-    & .btn-a:hover .btn-floating {
-        background: $whitePolar;
-        & i {
-            color: $redPolar;
-        }
-    }
-    //Hover Boton 2
-    & .btn-a:nth-child(2):hover {
-        background: $cyber;
-        color: white;
-        & i {
-            color: $cyber;
-        }
+        color: $whitePolar!important;
+        box-shadow: 0 -100px 0 $redPolar inset;
     }
 }
+
 //Calugas 
 .box-caluga {
     position: relative;
-    border-bottom: none;
-    @media screen and (max-width:480px) {
-        //border-bottom: 1px solid $lineColor;
+    border: none;
+    box-shadow: none;
+    @media screen and (max-width: 480px) {
+        border-bottom: 1px solid $lineColor;
+    }
+    @media screen and (max-width: 480px) {
+        .box-caluga:nth-of-type(1) {
+            border-bottom: 4px solid $lineColor;
+        }
     }
     @media screen and (max-width:321px) {
         min-height: 330px!important;
     }
-        & .link-product {
-            display: block;
-            height: 100%;
-            position: relative;
-            & .calugas-container {
+    & .link-product {
+        display: block;
+        height: 100%;
+        position: relative;
+        & .calugas-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            @media screen and (max-width:480px) {
+            @media screen and (max-width: 480px) {
                 flex-direction: row;
                 justify-content: space-around;
             }
@@ -552,17 +542,18 @@
                 justify-content: flex-start;
             }
             & .caluga {
+                transition: $transition1;
                 width: 100%;
             }
             & .cal-1 {
                 max-width: 220px;
-                @media screen and (max-width:480px) {
+                @media screen and (max-width: 480px) {
                     max-width: 150px;
                 }
             }
             & .cal-2 {
                 max-width: 240px;
-                @media screen and (max-width:480px) {
+                @media screen and (max-width: 480px) {
                     max-width: 140px;
                 }
                 @media screen and (max-width:321px) {
@@ -576,8 +567,8 @@
             opacity: 0;
             transition: $transition1;
             display: none;
-            @media screen and (max-width:1440px) {
-                bottom: -40px;                
+            @media screen and (max-width: 1440px) {
+                bottom: -40px;
             }
             @media screen and (max-width:480px) {
                 opacity: 0;
@@ -586,15 +577,20 @@
         }
     }
 }
+
 .box-caluga:hover {
+    border: none;
     box-shadow: none;
-    z-index: inherit;
-    background: transparent;
+    transform: none;
 }
+
+.box-caluga:hover .caluga {
+    transform: scale(1.05);
+}
+
 .box-caluga:hover .icon-plus-product {
     visibility: visible;
     opacity: 1;
     color: $redPolar;
     font-size: 1.8rem;
 }
-

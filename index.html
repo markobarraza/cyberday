@@ -86,14 +86,14 @@
         ga('create', 'UA-9375823-1', 'auto');
         ga('require', 'displayfeatures');
         ga('send', 'pageview');
-    </script>  
+    </script>
 </head>
 
 <body>
     <input type="hidden" id="listag" value="init">
 
     <!-- CARGADOR -->
-    <div id="preloader">   
+    <div id="preloader">
         <img id="cargador" src="img/cargador.png" alt="Cargando...">
     </div>
 
@@ -103,8 +103,8 @@
             <i class="large icon-share-2"></i>
         </a>
         <ul>
-            <li><a href="https://facebook.com/sharer.php?u=https://www.lapolar.cl/especial/cyberday" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" rel="nofollow"
-                    target="_blank" class="btn-floating light-blue darken-3"><i class="icon-facebook"></i></a></li>
+            <li><a href="https://facebook.com/sharer.php?u=https://www.lapolar.cl/especial/cyberday" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" rel="nofollow" target="_blank"
+                    class="btn-floating light-blue darken-3"><i class="icon-facebook"></i></a></li>
             <li>
                 <a href="https://twitter.com/share?url=https://www.lapolar.cl/especial/cyberday" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="btn-floating light-blue lighten-2"><i class="icon-twitter"></i></a>
             </li>
@@ -132,10 +132,10 @@
                 <!-- Menu Premios Mobile -->
                 <a href="#" data-activates="mobile-premios" class="right button-collapse"><i class="icon-gift"></i></a>
                 <ul class="side-nav" id="mobile-premios">
-                        <li><a href="#!">Sass</a></li>
-                        <li><a href="#!">Components</a></li>
-                        <li><a href="#!">JavaScript</a></li>
-                    </ul>
+                    <li><a href="#!">Sass</a></li>
+                    <li><a href="#!">Components</a></li>
+                    <li><a href="#!">JavaScript</a></li>
+                </ul>
                 <!-- Menu Main Desktop -->
                 <a href="" class="brand-logo"><img src="img/isotipo.png" class="logotipo-menu responsive-img"></a>
                 <ul id="nav-desktop" class="nav-desktop right hide-on-med-and-down">
@@ -164,1111 +164,1062 @@
     </section>
 
 
-    <main>  
-            <!-- TECNOLOGIA SECTION -->
-            <section id="tecnologia" class="container main-container-category">
-                <!-- Title section -->
-                <div class="title-section valign-wrapper">
-                    <div class="hide-on-small-only icons-title center-align">
-                        <i class="iconos cyber-text icon-smartphone"></i>
-                        <i class="iconos black-text icon-tv2"></i>
-                        <i class="iconos red-polar-text icon-monitor"></i>
+    <main>
+        <!-- TECNOLOGIA SECTION -->
+        <section id="tecnologia" class="container main-container-category">
+            <!-- Title section -->
+            <div class="title-section valign-wrapper">
+                <div class="hide-on-small-only icons-title center-align">
+                    <i class="iconos cyber-text icon-smartphone"></i>
+                    <i class="iconos black-text icon-tv2"></i>
+                    <i class="iconos red-polar-text icon-monitor"></i>
+                </div>
+                <h1 class="center-align">Tecnología</h1>
+                <div class="hide-on-small-only icons-title center-align">
+                    <i class="iconos red-polar-text icon-printer"></i>
+                    <i class="iconos black-text icon-camera2"></i>
+                    <i class="iconos cyber-text icon-headphones"></i>
+                </div>
+            </div>
+
+            <!-- Container Dinamic Products -->
+            <div id="productos" class="container-productos row">
+
+                <!-- Caluga Descuento -->
+                <div id="template-producto" class="waves-effect waves-dark box-product box-caluga col s12 m6 l4 xl3">
+                    <a class="link-product col s12" href="{link}">
+                        <div class="image calugas-container" id="image">
+                            <img class="caluga cal-1 responsive-img" src="img/calugas/producto.gif" alt="Llamado de Descuento">
+                            <img class="caluga cal-2 responsive-img" src="img/calugas/descuento.png" alt="Llamado de Descuento">
+                        </div>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products Original Template -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="small">ÚLTIMAS</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="small">CUOTAS SIN</p>
+                                    <p class="medium">INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG </h1>
+                        <h2 class="price-oferta">$220.000</h2>
+                        <p class="normal-price">Antes: $320.000</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB </h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">Antes: {precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products Agotado -->
+                <div id="template-producto" class="box-product box-agotado col s6 m6 l4 xl3">
+                    <div class="container-agotado col s12">
+                        <!-- Productos Relacionados -->
+                        <div class="hide white product-relacionado valign-wrapper">
+                            <i class="icon-bookmark icon-relacionado"></i>
+                            <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
+                            <div class="content-relacionado valign-wrapper">
+                                <h3 class="text-relacionado">Próximos Productos</h3>
+                                <a class="link-relacionado" href="#!">VER MÁS</a>
+                            </div>
+                        </div>
                     </div>
-                    <h1 class="center-align">Tecnología</h1>
-                    <div class="hide-on-small-only icons-title center-align">
-                        <i class="iconos red-polar-text icon-printer"></i>
-                        <i class="iconos black-text icon-camera2"></i>
-                        <i class="iconos cyber-text icon-headphones"></i>
+                    <!-- Agotado Standar -->
+                    <div class="container-agotado">
+                        <!-- Tags Agotado -->
+                        <span class="standar-agotado valign-wrapper">¡AGOTADO! <i class="hide icon-alert-circle"></i></span>
+                        <p class="text-agotado"><i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
                     </div>
+
+                    <!-- Product Oculto debajo del agotado -->
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                        <i class="icon-truck"></i>
+                        <p class="small">DESPACHO</p>
+                        <p class="medium">GRATIS</p>
+                    </span>
+                            <span class="tags-stock tags">
+                        <p class="big">100</p>
+                        <p class="medium">UNIDADES</p>
+                    </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                        <p class="big">10</p>
+                        <p class="medium">UNIDADES</p>
+                    </span>
+                            <span class="tags-cuotas tags">
+                        <p class="big">10</p>
+                        <p class="medium">CUOTAS</p>
+                        <p class="small">SIN INTERES</p>
+                    </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                        <i class="icon-truck"></i>
+                        <p class="small">DESPACHO</p>
+                        <p class="medium">GRATIS</p>
+                    </span>
+                            <span class="tags-stock tags">
+                        <p class="big">100</p>
+                        <p class="medium">UNIDADES</p>
+                    </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                        <p class="big">10</p>
+                        <p class="medium">UNIDADES</p>
+                    </span>
+                            <span class="tags-cuotas tags">
+                        <p class="big">10</p>
+                        <p class="medium">CUOTAS</p>
+                        <p class="small">SIN INTERES</p>
+                    </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
                 </div>
 
-                <!-- Container Dinamic Products -->
-                <div id="productos" class="container-productos row">
-
-                    <!-- Caluga Descuento -->
-                    <div id="template-producto" class="waves-effect waves-dark box-product box-caluga col s12 m6 l4 xl3">
-                        <a class="link-product col s12" href="{link}">
-                            <div class="image calugas-container" id="image">
-                                <img class="caluga cal-1 responsive-img" src="img/calugas/producto.gif" alt="Llamado de Descuento">
-                                <img class="caluga cal-2 responsive-img" src="img/calugas/descuento.png" alt="Llamado de Descuento">
-                            </div>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB </h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products Agotado -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <div class="container-agotado col s12">                            
-                            <!-- Productos Relacionados -->
-                            <div class="hide white product-relacionado valign-wrapper">
-                                <i class="icon-bookmark icon-relacionado"></i>
-                                <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
-                                <div class="content-relacionado valign-wrapper">
-                                    <h3 class="text-relacionado">Próximos Productos</h3>
-                                    <a class="link-relacionado" href="#!">VER MÁS</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Agotado Standar -->
-                        <div class="container-agotado">
-                            <!-- Tags Agotado -->                            
-                            <span class="standar-agotado valign-wrapper">¡AGOTADO! <i class="hide icon-alert-circle"></i></span>
-                            <p class="text-agotado"><i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
-                        </div>
-
-                        <!-- Product Oculto debajo del agotado -->
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products Agotado -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <div class="container-agotado col s12">                            
-                            <!-- Productos Relacionados -->
-                            <div class="hide white product-relacionado valign-wrapper">
-                                <i class="icon-bookmark icon-relacionado"></i>
-                                <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
-                                <div class="content-relacionado valign-wrapper">
-                                    <h3 class="text-relacionado">Próximos Productos</h3>
-                                    <a class="link-relacionado" href="#!">VER MÁS</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Agotado Standar -->
-                        <div class="container-agotado">
-                            <!-- Tags Agotado -->                            
-                            <span class="standar-agotado valign-wrapper">¡AGOTADO! <i class="hide icon-alert-circle"></i></span>
-                            <p class="text-agotado"><i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
-                        </div>
-
-                        <!-- Product Oculto debajo del agotado -->
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products Agotado -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <div class="container-agotado col s12">                            
-                            <!-- Productos Relacionados -->
-                            <div class="hide white product-relacionado valign-wrapper">
-                                <i class="icon-bookmark icon-relacionado"></i>
-                                <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
-                                <div class="content-relacionado valign-wrapper">
-                                    <h3 class="text-relacionado">Próximos Productos</h3>
-                                    <a class="link-relacionado" href="#!">VER MÁS</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Agotado Standar -->
-                        <div class="container-agotado">
-                            <!-- Tags Agotado -->                            
-                            <span class="standar-agotado valign-wrapper">¡AGOTADO! <i class="hide icon-alert-circle"></i></span>
-                            <p class="text-agotado"><i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
-                        </div>
-
-                        <!-- Product Oculto debajo del agotado -->
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Botones -->
-                    <div class="cont-btns col s12">
-                        <a class="btn-a center-align center-block red-polar-text waves-effect waves-light" href="#">VER MÁS TECNOLOG&Iacute;A  <span class="pulse btn-floating btn-large waves-effect waves-light red-polar-bg"><i class="icon-chevron-down"></i></span></a>
-                        <a class="hide btn-a center-align center-block cyber-text waves-effect waves-light" href="#">VER TODO TECNOLOG&Iacute;A  <span class="pulse btn-floating btn-large waves-effect waves-light cyber-bg"><i class="icon-chevron-right"></i></span></a>
-                    </div>
+                <!-- Botones -->
+                <div class="cont-btns col s12">
+                    <a class="btn-a center-align center-block cyber-text waves-effect waves-light" href="#">VER MÁS TECNOLOG&Iacute;A <i class="icon-plus"></i></a>
+                    <a class="hide btn-a center-align center-block cyber-text waves-effect waves-light" href="#">VER TODO TECNOLOG&Iacute;A <i class="icon-plus"></i></a>
                 </div>
-            </section>
-            <!-- LINEA BLANCA SECTION -->
-            <section id="lineablanca" class="container main-container-category">
-                <!-- Title section -->
-                <div class="title-section valign-wrapper">
-                    <div class="hide-on-small-only icons-title center-align">
-                        <i class="iconos cyber-text icon-smartphone"></i>
-                        <i class="iconos black-text icon-tv2"></i>
-                        <i class="iconos red-polar-text icon-monitor"></i>
-                    </div>
-                    <h1 class="center-align">LÍNEA BLANCA</h1>
-                    <div class="hide-on-small-only icons-title center-align">
-                        <i class="iconos red-polar-text icon-printer"></i>
-                        <i class="iconos black-text icon-camera2"></i>
-                        <i class="iconos cyber-text icon-headphones"></i>
-                    </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- LINEA BLANCA SECTION -->
+        <section id="lineablanca" class="container main-container-category">
+            <!-- Title section -->
+            <div class="title-section valign-wrapper">
+                <div class="hide-on-small-only icons-title center-align">
+                    <i class="iconos cyber-text icon-smartphone"></i>
+                    <i class="iconos black-text icon-tv2"></i>
+                    <i class="iconos red-polar-text icon-monitor"></i>
                 </div>
-
-                <!-- Container Dinamic Products -->
-                <div id="productos" class="container-productos row">
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products Agotado -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <div class="container-agotado col s12">                            
-                            <!-- Productos Relacionados -->
-                            <div class="hide white product-relacionado valign-wrapper">
-                                <i class="icon-bookmark icon-relacionado"></i>
-                                <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
-                                <div class="content-relacionado valign-wrapper">
-                                    <h3 class="text-relacionado">Próximos Productos</h3>
-                                    <a class="link-relacionado" href="#!">VER MÁS</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Agotado Standar -->
-                        <div class="container-agotado">
-                            <!-- Tags Agotado -->                            
-                            <span class="standar-agotado valign-wrapper">¡AGOTADO! <i class="hide icon-alert-circle"></i></span>
-                            <p class="text-agotado"><i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
-                        </div>
-
-                        <!-- Product Oculto debajo del agotado -->
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products Agotado -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <div class="container-agotado col s12">                            
-                            <!-- Productos Relacionados -->
-                            <div class="hide white product-relacionado valign-wrapper">
-                                <i class="icon-bookmark icon-relacionado"></i>
-                                <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
-                                <div class="content-relacionado valign-wrapper">
-                                    <h3 class="text-relacionado">Próximos Productos</h3>
-                                    <a class="link-relacionado" href="#!">VER MÁS</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Agotado Standar -->
-                        <div class="container-agotado">
-                            <!-- Tags Agotado -->                            
-                            <span class="standar-agotado valign-wrapper">¡AGOTADO! <i class="hide icon-alert-circle"></i></span>
-                            <p class="text-agotado"><i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
-                        </div>
-
-                        <!-- Product Oculto debajo del agotado -->
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products Agotado -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <div class="container-agotado col s12">                            
-                            <!-- Productos Relacionados -->
-                            <div class="hide white product-relacionado valign-wrapper">
-                                <i class="icon-bookmark icon-relacionado"></i>
-                                <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
-                                <div class="content-relacionado valign-wrapper">
-                                    <h3 class="text-relacionado">Próximos Productos</h3>
-                                    <a class="link-relacionado" href="#!">VER MÁS</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Agotado Standar -->
-                        <div class="container-agotado">
-                            <!-- Tags Agotado -->                            
-                            <span class="standar-agotado valign-wrapper">¡AGOTADO! <i class="hide icon-alert-circle"></i></span>
-                            <p class="text-agotado"><i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
-                        </div>
-
-                        <!-- Product Oculto debajo del agotado -->
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
-                    <!-- Products Agotado -->
-                    <div id="template-producto" class="box-product col s6 m6 l4 xl3">
-                        <div class="container-agotado col s12">                            
-                            <!-- Productos Relacionados -->
-                            <div class="hide white product-relacionado valign-wrapper">
-                                <i class="icon-bookmark icon-relacionado"></i>
-                                <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
-                                <div class="content-relacionado valign-wrapper">
-                                    <h3 class="text-relacionado">Próximos Productos</h3>
-                                    <a class="link-relacionado" href="#!">VER MÁS</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Agotado Standar -->
-                        <div class="container-agotado">
-                            <!-- Tags Agotado -->                            
-                            <span class="standar-agotado valign-wrapper">¡AGOTADO! <i class="hide icon-alert-circle"></i></span>
-                            <p class="text-agotado"><i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
-                        </div>
-
-                        <!-- Product Oculto debajo del agotado -->
-                        <a class="waves-effect waves-light link-product col s12" href="{link}">
-                            <div class="image" id="image">
-                                <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
-                            </div>
-                            <!-- Tags Principales -->
-                            <div class="tags-main valign-wrapper">
-                                <span class="tags-despacho tags">
-                                    <i class="icon-truck"></i>
-                                    <p class="small">DESPACHO</p>
-                                    <p class="medium">GRATIS</p>
-                                </span>
-                                <span class="tags-stock tags">
-                                    <p class="big">100</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="hide tags-stock tags-stock-active tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">UNIDADES</p>
-                                </span>
-                                <span class="tags-cuotas tags">
-                                    <p class="big">10</p>
-                                    <p class="medium">CUOTAS</p>
-                                    <p class="small">SIN INTERES</p>
-                                </span>
-                            </div>
-                            <!-- Tags Secundarios -->
-                            <div class="tags-first valign-wrapper">
-                                <span class="tags marca hide-on-small-only">{marca}</span>
-                                <span class="tags product-cyber">{producto_cyber}</span>
-                            </div>
-                            <h1 class="description">Notebook 8 GB RAM 1 TB DD 
-                                    Intel Core i5 NG</h1>
-                            <h2 class="price-oferta">{precio}</h2>
-                            <p class="normal-price">{precio_normal}</p>
-                            <i class="icon-plus icon-plus-product"></i>
-                        </a>
-                    </div>
+                <h1 class="center-align">LÍNEA BLANCA</h1>
+                <div class="hide-on-small-only icons-title center-align">
+                    <i class="iconos red-polar-text icon-printer"></i>
+                    <i class="iconos black-text icon-camera2"></i>
+                    <i class="iconos cyber-text icon-headphones"></i>
                 </div>
-            </section>
-            
+            </div>
+
+            <!-- Container Dinamic Products -->
+            <div id="productos" class="container-productos row">
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje"><span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products Agotado -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <div class="container-agotado col s12">
+                        <!-- Productos Relacionados -->
+                        <div class="hide white product-relacionado valign-wrapper">
+                            <i class="icon-bookmark icon-relacionado"></i>
+                            <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
+                            <div class="content-relacionado valign-wrapper">
+                                <h3 class="text-relacionado">Próximos Productos</h3>
+                                <a class="link-relacionado" href="#!">VER MÁS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agotado Standar -->
+                    <div class="container-agotado">
+                        <!-- Tags Agotado -->
+                        <span class="standar-agotado valign-wrapper">¡AGOTADO! <i class="hide icon-alert-circle"></i></span>
+                        <p class="text-agotado"><i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
+                    </div>
+
+                    <!-- Product Oculto debajo del agotado -->
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products Agotado -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <div class="container-agotado col s12">
+                        <!-- Productos Relacionados -->
+                        <div class="hide white product-relacionado valign-wrapper">
+                            <i class="icon-bookmark icon-relacionado"></i>
+                            <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
+                            <div class="content-relacionado valign-wrapper">
+                                <h3 class="text-relacionado">Próximos Productos</h3>
+                                <a class="link-relacionado" href="#!">VER MÁS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agotado Standar -->
+                    <div class="container-agotado">
+                        <!-- Tags Agotado -->
+                        <span class="standar-agotado valign-wrapper">¡AGOTADO! <i class="hide icon-alert-circle"></i></span>
+                        <p class="text-agotado"><i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
+                    </div>
+
+                    <!-- Product Oculto debajo del agotado -->
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products Agotado -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <div class="container-agotado col s12">
+                        <!-- Productos Relacionados -->
+                        <div class="hide white product-relacionado valign-wrapper">
+                            <i class="icon-bookmark icon-relacionado"></i>
+                            <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
+                            <div class="content-relacionado valign-wrapper">
+                                <h3 class="text-relacionado">Próximos Productos</h3>
+                                <a class="link-relacionado" href="#!">VER MÁS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agotado Standar -->
+                    <div class="container-agotado">
+                        <!-- Tags Agotado -->
+                        <span class="standar-agotado valign-wrapper">¡AGOTADO! <i class="hide icon-alert-circle"></i></span>
+                        <p class="text-agotado"><i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
+                    </div>
+
+                    <!-- Product Oculto debajo del agotado -->
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products Agotado -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <div class="container-agotado col s12">
+                        <!-- Productos Relacionados -->
+                        <div class="hide white product-relacionado valign-wrapper">
+                            <i class="icon-bookmark icon-relacionado"></i>
+                            <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
+                            <div class="content-relacionado valign-wrapper">
+                                <h3 class="text-relacionado">Próximos Productos</h3>
+                                <a class="link-relacionado" href="#!">VER MÁS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agotado Standar -->
+                    <div class="container-agotado">
+                        <!-- Tags Agotado -->
+                        <span class="standar-agotado valign-wrapper">¡AGOTADO! <i class="hide icon-alert-circle"></i></span>
+                        <p class="text-agotado"><i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
+                    </div>
+
+                    <!-- Product Oculto debajo del agotado -->
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                    <i class="icon-truck"></i>
+                                    <p class="small">DESPACHO</p>
+                                    <p class="medium">GRATIS</p>
+                                </span>
+                            <span class="tags-stock tags">
+                                    <p class="big">100</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="hide tags-stock tags-stock-active tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">UNIDADES</p>
+                                </span>
+                            <span class="tags-cuotas tags">
+                                    <p class="big">10</p>
+                                    <p class="medium">CUOTAS</p>
+                                    <p class="small">SIN INTERES</p>
+                                </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">{precio_normal}</p>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 
@@ -1290,29 +1241,29 @@
 
                 <!--Open Contenedor Productos-->
                 <div id="productos" class="container-productos cont-productos">
-					<div id="template-producto" class="product">
-						<a class="waves-effect waves-light ancla-product" href="{link}">
-							<div class="image" id="image">
-								<img src="/img/store/lista180/{imagen}" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
-							</div>
-							<h4 class="description">{descripcion}</h4>
-							<h2 class="price-web-services">{precio}</h2>
-							<h5 class="normal-price">Precio Normal: {precio_normal}</h5>
-							<porcentaje class="center-align porcentaje">{porcentaje} de dcto.</porcentaje>
-							<a href="{link}" class="btn-oferta" target="_blank">VER OFERTA</a>
+                    <div id="template-producto" class="product">
+                        <a class="waves-effect waves-light ancla-product" href="{link}">
+                            <div class="image" id="image">
+                                <img src="/img/store/lista180/{imagen}" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
+                            </div>
+                            <h4 class="description">{descripcion}</h4>
+                            <h2 class="price-web-services">{precio}</h2>
+                            <h5 class="normal-price">Precio Normal: {precio_normal}</h5>
+                            <porcentaje class="center-align porcentaje">{porcentaje} de dcto.</porcentaje>
+                            <a href="{link}" class="btn-oferta" target="_blank">VER OFERTA</a>
                             <p class="grey-text center-align stock">Stock {stock} unidades</p>
                             <span>{marca}</span>
                             <span>{precio_tlp}</span>
                             <span>{cuotas}</span>
                             <span>{valor_cuota}</span>
-						</a>
-					</div>
-				</div>
+                        </a>
+                    </div>
+                </div>
             </section>
         </div>
     </div>
 
-    
+
     <!--Script-->
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/materialize.min.js"></script>
