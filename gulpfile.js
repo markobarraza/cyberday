@@ -29,6 +29,10 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./www/css'))
         .pipe(browserSync.stream());
 });
+// observar todos los Sass 
+gulp.task('obsSass', function() {
+    gulp.watch('./scss/**/*.scss', ['sass']);
+});
 
 // Javascript Compress
 gulp.task('compressJs', function(cb) {

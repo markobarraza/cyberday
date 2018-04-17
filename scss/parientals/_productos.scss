@@ -166,7 +166,6 @@
         align-items: center;
         padding: 0;
         overflow: hidden;
-        @media screen and (max-width: 480px) {}
         //STANDAR AGOTADO
         & .standar-agotado {
             width: 115%;
@@ -185,6 +184,9 @@
             justify-content: center;
             z-index: 20;
             font-size: 1rem;
+            @media screen and (max-width: 480px) {
+                letter-spacing: 2px;
+            }
             @media screen and (max-width: 321px) {
                 font-size: .8rem;
             }
@@ -288,9 +290,11 @@
             flex: auto;
             display: flex;
             margin: 0;
-            min-height: 60px;
+            min-height: 65px;
             margin-bottom: 1rem;
             border-radius: 5px;
+            //border-bottom: 1px solid $lineColor;
+            //border-top: 1px solid $lineColor;
             @media screen and (max-width: 480px) {
                 display: none;
             }
@@ -402,7 +406,7 @@
             margin-bottom: 10px;
             min-height: 55px;
             @media screen and (max-width: 480px) {
-                font-size: 14px;
+                font-size: 13px;
             }
             @media screen and (max-width: 321px) {
                 font-size: 12.5px;

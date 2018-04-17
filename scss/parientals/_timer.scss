@@ -1,0 +1,63 @@
+.timer-premios-container {
+    margin: 0;
+    padding: 5rem 0;        
+    & .col {
+        position: relative;
+        padding: 0 2rem;
+        & .valign-wrapper {
+            justify-content: center;
+            align-items: center;
+        }
+        & .contenido-textual {
+            h1,h2,h3,p,a {
+                margin: 0;
+                margin-bottom: .5rem;
+            }
+            h1 {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+                display: flex;
+                align-content: center;
+                & .signo-peso {
+                    font-size: 1.2rem;
+                    padding-right: 2px;
+                    vertical-align: middle;
+                }
+            }
+            p {
+                color: $myParrafo;
+                font-size: 1rem;
+            }
+        }
+    }
+    & .col:first-child {
+        border-right: 2px solid $lineColor;
+    }
+    & .col:last-child {
+    }
+}
+
+.btn-red {
+    color: $redPolar;
+    border: 2px solid $redPolar;
+    line-height: 45px;
+    padding: 0 1.5rem;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 600;
+    background: $whitePolar;
+    transition: $transition1;
+    letter-spacing: 1px;
+}
+.btn-red:hover {
+    box-shadow: 0 20px 30px -15px rgba(0,0,0,.4);
+    background: $redPolar;
+    color: $whitePolar;
+
+}
