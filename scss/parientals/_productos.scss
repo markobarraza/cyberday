@@ -1,6 +1,7 @@
 .main-container-category {
     width: 100%;
 }
+
 @media screen and (max-width: 768px) {
     .main-container-category:last-child {
         margin-bottom: 56px;
@@ -286,17 +287,17 @@
         //Tags Despacho - Stock - Cuotas
         & .tags-main {
             align-items: center;
-            justify-content: space-around;
-            flex: auto;
+            justify-content: flex-start;
+            width: 100%;
             display: flex;
             margin: 0;
-            min-height: 65px;
+            min-height: 30px;
             margin-bottom: 1rem;
             border-radius: 5px;
             //border-bottom: 1px solid $lineColor;
             //border-top: 1px solid $lineColor;
             @media screen and (max-width: 480px) {
-                display: none;
+                //display: none;
             }
             & .tags {
                 display: flex;
@@ -304,17 +305,17 @@
                 justify-content: center;
                 flex-direction: column;
                 margin: 0;
-                text-align: center;
+                text-align: left;
                 line-height: normal;
                 flex: auto;
-                min-height: 60px;
+                //min-height: 0px;
                 font-weight: 500;
-                color: #a3a3a3;
+                color: #ccc;
                 box-shadow: -1px 0 0 $lineColor inset;
                 transition: $transition1;
                 position: relative;
                 & .tarjeta {
-                    width: 30px;
+                    width: 35px;
                     margin-bottom: 3px;
                 }
                 & p {
@@ -332,8 +333,8 @@
                     font-size: 18.5px;
                     font-weight: bold;
                 }
-                & .icon-truck {
-                    font-size: 25px;
+                & i {
+                    font-size: 20px;
                 }
             }
             & .tags:hover {
@@ -356,7 +357,7 @@
                 background: $redPolar;
                 top: 0;
                 transform: translateY(-3px);
-                animation: stock 1s infinite  alternate;
+                animation: stock 1s infinite alternate;
             }
             @keyframes stock {
                 0% {
@@ -536,7 +537,7 @@
     border: none;
     border-right: 1px solid #f0f0f0;
     box-shadow: none;
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
         box-shadow: 0 0 0 $lineColor inset, 1px 0 0 $lineColor;
         display: flex;
         justify-content: center;
