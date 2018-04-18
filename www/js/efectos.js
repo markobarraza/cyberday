@@ -53,18 +53,6 @@ $(function() {
 
 });
 
-// Swiper
-var swiper = new Swiper('.swiper-container', {
-    pagination: '.swiper-pagination',
-    slidesPerView: 4,
-    paginationClickable: true,
-    spaceBetween: 30,
-    freeMode: true,
-    autoplay: 2500,
-    autoplayDisableOnInteraction: false
-});
-
-
 // Scroll Top 
 // Comprobar si estamos, al menos, 100 px por debajo de la posición top
 // para mostrar o esconder el botón
@@ -97,3 +85,25 @@ $(window).load(function() {
     $('#preloader').fadeOut('slow');
     $('body').css({'overflow':'visible'});
 })
+
+// Swiper
+var swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    autoplay: true,
+    spaceBetween: 30,
+    effect: 'fade',
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+  });

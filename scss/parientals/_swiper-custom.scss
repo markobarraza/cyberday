@@ -1,48 +1,69 @@
-        .container-marcas {
-            border-top: 1px solid #f0f0f0;
-            padding-top: 30px;
-            & .swiper-container {
-                width: 80%;
-                height: 200px;
-                margin-bottom: 50px;
-                & .swiper-slide {
-                    text-align: center;
-                    background: #fff;
-                    /* Center slide text vertically */
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    @media screen and (max-width: 480px) {
-                        width: 80px !important;
-                    }
-                    & img {
-                        filter: url('#grayscale');
-                        -webkit-filter: grayscale(100%);
-                        -moz-filter: grayscale(100%);
-                        -ms-filter: grayscale(100%);
-                        -o-filter: grayscale(100%);
-                        filter: grayscale(100%);
-                        filter: Gray();
-                        opacity: .2;
-                        transition: all .4s;
-                        @media screen and (max-width: 480px) {
-                            //max-width: 100px !important;
-                        }
-                    }
-                    & img:hover {
-                        filter: url('#grayscale');
-                        -webkit-filter: grayscale(0%);
-                        -moz-filter: grayscale(0%);
-                        -ms-filter: grayscale(0%);
-                        -o-filter: grayscale(0%);
-                        filter: grayscale(0%);
-                        filter: Gray();
-                        opacity: 1;
-                    }
-                }
-                & .swiper-pagination-bullet-active {
-                    background: $redPolar;
-                    transition: $transition1;
-                }
-            }
+.slider-swiper-cont {
+    height: 540px;
+    width: 100%;
+    @media screen and (max-width: 480px) {
+        height: 70vh;
+    }
+    @media screen and (max-width: 321px) {
+        height: 75vh;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid $lineColor;
+        @media screen and (max-width: 480px) {
+            border-bottom: none;
         }
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-pagination {
+        transform: translateY(-20px);
+    }
+    .swiper-pagination-bullet {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 12px;
+        font-weight: 600;
+        color:$myParrafo;
+        box-shadow: 0 0 0 2px $lineColor inset;
+        background: transparent;
+        opacity: 1;
+        transition: $transition1;
+        
+    }
+    .swiper-pagination-bullet-active {
+        box-shadow: 0 0 0 0 transparent inset;
+        color:#fff;
+        background: $redPolar;
+
+      }
+      .swiper-button-prev, .swiper-button-next {
+        background: black;
+        width: 50px!important;
+        height: 50px!important;
+        background-size: 50px!important;
+        border-radius: 50% 0 0 50%;
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+      }
+    .swiper-button-prev {
+        left: 0!important;
+        background-image: url(../img/arrow.png)!important;
+        transform: rotate(180deg);
+    }
+    .swiper-button-next {
+        background-image: url(../img/arrow.png)!important;
+        right: 0!important;
+    }
+}
