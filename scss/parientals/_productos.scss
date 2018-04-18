@@ -288,19 +288,19 @@
         & .tags-main {
             position: relative;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             width: 100%;
             display: flex;
             margin: 0;
             min-height: 35px;
-            margin-top: 1rem;
+            margin-top: 2.5rem;
             border-radius: 5px;
             border-top: 1px solid $lineColor;
             @media screen and (max-width: 480px) {
                 //display: none;
             }
             & .tags {
-                position: absolute;
+                position: relative;
                 font-weight: 500;
                 text-align: center;
                 line-height: normal;
@@ -315,11 +315,14 @@
                 border-radius: 50px;
                 top: -22px;
                 transition: $transition1;
-                @media screen and (min-width: 1440px) {
+                margin-right: .5rem;
+                @media screen and (max-width: 480px) {
+                    margin-right: 0;
                 }
                 & .tarjeta {
-                    width: 35px;
+                    width: 30px;
                     margin-bottom: 3px;
+                    z-index: 1;
                 }
                 & p {
                     font-size: 9px;
@@ -347,46 +350,31 @@
                 color: $blackPolar;
             }
             & .tags:last-child {
-                box-shadow: none;
-            }
-            //TAGS DESPACHO 
-            & .tags-despacho {
-                left: 0;
-            }
-            //TAGS CUOTAS 
-            & .tags-cuotas {
-                left: 60px;
-            }
-            //TAGS STOCK 
-            & .tags-stock {
-                left: 120px;
+                margin-right: 0;
             }
             //TAGS STOCK ACTIVO
             & .tags-stock-active {
                 color: $redPolar;
                 position: relative;
             }
-            //TAGS STOCK 
-            & .tags-gift {
-                left: 180px;
-            }
             & .tags-stock-active::before {
                 content: "";
                 position: absolute;
-                width: 5px;
-                height: 5px;
+                width: 6px;
+                height: 6px;
                 border-radius: 5px;
                 background: $redPolar;
-                top: 0;
+                top: 2px;
+                right: 5px;
                 transform: translateY(-3px);
                 animation: stock 1s infinite alternate;
             }
             @keyframes stock {
                 0% {
-                    box-shadow: 0 0 0 2px rgba(231, 8, 34, 0);
+                    box-shadow: 0 0 0 2px rgba(231, 8, 34, 0.5);
                 }
                 100% {
-                    box-shadow: 0 0 0 5px rgba(231, 8, 34, 0.3);
+                    box-shadow: 0 0 0 10px rgba(231, 8, 34, 0);
                 }
             }
             & .tags-stock-active:hover {
@@ -516,13 +504,13 @@
     }
     & .btn-a {
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         letter-spacing: 3px;
         line-height: 100px;
         display: block;
         font-weight: 600;
         transition: $transition1;
-        box-shadow: 0 0 0 $cyber inset;
+        box-shadow: 0 0 0 $blackPolar inset;
         border-top: solid 2px $lineColor;
         @media screen and (min-width: 1440px) {
             font-size: 1.3rem;
@@ -536,13 +524,16 @@
             text-align: center;
         }
         @media screen and (max-width:321px) {
-            font-size: 1rem;
             letter-spacing: 1px;
         }
         & i {
             font-size: 1.5rem;
             position: relative;
             top: 3px;
+            @media screen and (max-width:321px) {
+                top: 1.5px;
+                font-size: 1.25rem;
+            }
         }
     }
     //Hover Boton 1
