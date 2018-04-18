@@ -106,6 +106,38 @@
 			.ocultarCaja{
 				display: none;
 			}
+			.valor-timer
+			{
+				font-family: unset;
+				font-size: 23px !important;
+				border-width: 0;
+				text-align: right;
+				width: 14% !important;
+				padding: 0 !important;
+				font-weight: bold;
+			}
+			.text-timer{
+				font-family: unset;
+				font-size: 10px !important;
+				border-width: 0;
+				text-align: right;
+				width: 14% !important;
+				padding: 0 !important;
+				font-weight: bold;
+			}
+			.content-timer
+			{
+				position: absolute;
+				top: 77%;
+				left: 66%;
+				width: 30%
+			}
+			.content-text-timer{
+				position: absolute;
+				top: 86%;
+				left: 66%;
+				width: 30%
+			}
 	</style>
 </head>
 
@@ -114,7 +146,7 @@
 	<div id="preloader">
 		<img id="cargador" src="img/cargador.png" alt="Cargando...">
 	</div>
-	<input type="hidden" id="listag" value="prueba_desarrollo_20180416">
+	<input type="hidden" id="listag" value="prueba_desarrollo_20180418">
 	<input type="hidden" id="nivel1" value="16">
 	<div id="{etiqueta_categoria}" linktodo="{linktodo}" class="hide boton-categoria cont-btns col s12">
 		<a id="botonvermas" class="btn-a center-align center-block cyber-text waves-effect waves-light">VER MÁS<i class="icon-plus"></i></a>
@@ -147,7 +179,7 @@
 			<p class="text-agotado">
 				<i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
 		</div>
-		<porcentaje class="porcentaje {producto_template}"><span class="number-porcentaje">{porcentaje}%</span> dcto.</porcentaje>
+		<porcentaje class="porcentaje {producto_template} {oculta_descuento}"><span class="number-porcentaje">{porcentaje}%</span> dcto.</porcentaje>
 		<a class="waves-effect waves-light link-product col s12 {producto_template}" href="{link}">
 			<div class="image" id="image">
 				<img data-original="/img/store/lista180/{imagen}" src="https://tienda.lapolar.cl/images/load.gif" alt="" class="lazy responsive-img product-image">
@@ -156,23 +188,24 @@
 			<div class="tags-main valign-wrapper">
 				<span class="tags-despacho tags">
 					<i class="icon-truck"></i>
-					<p class="small">DESPACHO</p>
+					<p class="medium">DESPACHO</p>
 					<p class="medium">GRATIS</p>
 				</span>
 				<span class="{tag-stock}">
 					<p class="big">{stock}</p>
-					<p class="medium">UNIDADES</p>
+					<p class="medium">{stock_texto_unidades}</p>
+					<p class="medium">{stock_texto}</p>
 				</span>
-				<span class="tags-cuotas tags">
-					<p class="big">{cuotas}</p>
-					<p class="medium">CUOTAS</p>
-					<p class="small">SIN INTERES</p>
+				<span class="tags-cuotas tags {oculta_cuota}">
+					<img src="img/icon-tarjeta.png" class="tarjeta" alt="Tarjeta La Polar">
+					<p class="medium">{cuotas} CUOTAS</p>
+					<p class="medium">SIN INTERES</p>
 				</span>
 			</div>
 			<!-- Tags Secundarios -->
 			<div class="tags-first valign-wrapper">
-				<span class="tags marca hide-on-small-only">{marca}</span>
-				<span class="tags product-cyber">PRODUCTO CYBER</span>
+				<span class="tags marca hide-on-small-only {oculta_marca}">{marca}</span>
+				<span class="tags product-cyber {oculta_cyber}">{producto_cyber}</span>
 			</div>
 			<h1 class="description">{descripcion}</h1>
 			<h2 class="price-oferta">{precio}</h2>
@@ -309,8 +342,44 @@
 		</nav>
 	</header>
 
-	<section class="slider">
-
+	<section class="container main-container-category timer-activo">
+		<div class="row timer-premios-container">
+		<!-- Contenido Timer -->
+			<div class="col s12 m6">
+				<div class="valign-wrapper">
+					<a href="#!"><img src="img/timer/producto-1.jpg" class="responsive-img"></a>
+					<div class="contenido-textual">
+						<h1>BOMBAZOS</h1>
+						<h2 class="description">Nombre Producto </h2>
+						<h3 class="price-oferta"><span class="signo-peso">$</span>220.000</h3>
+						<p class="normal-price">Antes: $330.000</p>
+						<a class="waves-effect waves-light btn-red" href="#!">VER MÁS</a>
+					</div>
+				</div>
+				<div class="content-timer">
+					<div class="col s1 m1 valor-timer dia">1</div>
+					<div class="col s1 m1 valor-timer">:</div>
+					<div class="col s1 m1 valor-timer hora">1</div>
+					<div class="col s1 m1 valor-timer">:</div>
+					<div class="col s1 m1 valor-timer minuto">1</div>
+					<div class="col s1 m1 valor-timer">:</div>
+					<div class="col s1 m1 valor-timer segundo">1</div>
+				</div>
+				<div class="content-text-timer">
+					<div class="col s1 m1 text-timer">Dias</div>
+					<div class="col s1 m1 text-timer">&nbsp;</div>
+					<div class="col s1 m1 text-timer">Horas</div>
+					<div class="col s1 m1 text-timer">&nbsp;</div>
+					<div class="col s1 m1 text-timer">Minutos</div>
+					<div class="col s1 m1 text-timer">&nbsp;</div>
+					<div class="col s1 m1 text-timer">Segundos</div>
+				</div>
+			</div>
+			<!-- Contenido Premios -->
+			<div class="col s12 m6">
+				<div class="valign-wrapper">Hola</div>
+			</div>
+		</div>
 	</section>
 
 
@@ -478,7 +547,7 @@
 	<script src="js/dist/swiper.min.js"></script>
 	<script src="js/dist/efectos.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
-	<script src="/js/dyn_landingv71.js"></script>
+	<script src="/js/dyn_landing.js"></script>
 </body>
 
 </html>
