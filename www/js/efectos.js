@@ -111,4 +111,6 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 // Tooltips
-$('.tooltipped').tooltip({delay: 50});
+$(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+  });

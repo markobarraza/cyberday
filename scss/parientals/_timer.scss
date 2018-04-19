@@ -3,70 +3,134 @@
     margin-left: 0!important;
     margin-right: 0!important;
     padding: 4rem 0;        
+    @media screen and (max-width:480px) {
+        padding: 2rem 1rem;
+    }
     & .timer-container, .premios-container {
         position: relative;
-        //padding: 0 2rem;
-        & .timer-producto{
+        border-right: 2px solid $lineColor;
+        @media screen and (max-width:480px) {
+            border-right: none;
+            padding-bottom: 2rem;
+            border-bottom: 5px solid $lineColor;
+            margin-bottom: 2rem;
+        }
+        & .timer-producto {
             justify-content: center;
             align-items: center;
             position: relative;
+            @media screen and (max-width:480px) {
+                align-items: flex-start;
+            }
+            @media screen and (max-width:321px) {
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
         }
         & .img-bomba {
-            width: 300px;
+            width: 325px;
+            margin-right: 1rem;
+            @media screen and (max-width:480px) {
+             margin-right: 0;
+             width: 250px;
+            }
         }
         & .contenido-textual {
-            h1,h2,h3,p,a {
+            @media screen and (max-width:321px) {
+                width: 100%;
+                text-align: center;
+            }
+            h1,h2,h3,p {
                 margin: 0;
                 margin-bottom: .5rem;
             }
-            h1 {
-                font-size: 2rem;
+            .marca-bomba {
+                font-size: 9px;
+                background: #000;
+                color: #fff;
+                line-height: normal;
+                padding: 3px 5px;
+                border-radius: 3px;
                 font-weight: 600;
+                text-transform: uppercase;
+                top: -2px;
+                display: inline-block;
+                position: relative;
+                margin-bottom: 5px;
             }
-            h2 {
-                font-size: 1.3rem;
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                padding-bottom: .8rem;
+                margin-bottom: .8rem;
+                border-bottom: 1px solid $lineColor;
+                color: $redPolar;
+                @media screen and (max-width:480px) {
+                    font-size: 1rem;
+                }
             }
-            h3 {
+            h2.description {
+                font-size: 1rem;
+                text-transform: uppercase;
+                @media screen and (max-width:480px) {
+                    font-size: .9rem;
+                }
+            }
+            h3.price-oferta {
                 font-size: 1.5rem;
                 display: flex;
                 align-content: center;
+                font-weight: 600;
+                justify-content: flex-start;
+                @media screen and (max-width:321px) {
+                    justify-content: center; 
+                    font-size: 2rem;
+                }
                 & .signo-peso {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     padding-right: 2px;
                     vertical-align: middle;
                 }
             }
-            p {
+            p.normal-price {
                 color: $myParrafo;
-                font-size: 1rem;
+                font-size: .8rem;
             }
         }
     }
     & .premios-container {
-        border-left: 2px solid $lineColor;
-        min-height: 350px;
+        position: relative;
+        @media screen and (max-width:480px) {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
     }
 }
 
 .btn-red {
     color: $redPolar;
-    border: 2px solid #ea082228;
+    border: 2px solid rgba(231, 8, 34, 0.15);
     line-height: 40px;
     padding: 0 2rem;
     display: inline-block;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 5px;
     font-weight: 600;
     background: $whitePolar;
     transition: $transition1;
     letter-spacing: 1px;
     font-size: .9rem;
-
+    margin: .5rem 0 1rem 0;
+    box-shadow: 0 20px 30px -15px rgba(0,0,0,0), 0 0 0 0 $redPolar inset;
+    @media screen and (max-width:480px) {
+     padding: 0 1rem;
+     width: 100%;
+    }
 }
 .btn-red:hover {
-    box-shadow: 0 20px 30px -15px rgba(0,0,0,.4);
-    background: $redPolar;
+    box-shadow: 0 20px 30px -15px rgba(0,0,0,.4), 0 -40px 0 0 #e70822 inset;
     color: $whitePolar;
+    border: 2px solid rgba(231, 8, 34, 1);
 
 }
 
@@ -74,19 +138,36 @@
 .content-timer {
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    left: -12.5px;
+    @media screen and (max-width:480px) {
+        left: -8px;
+    }
+    @media screen and (max-width:321px) {
+        left: 0;
+    }
     & .box-timer, & .box-valor {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         font-weight: 600;
+        @media screen and (max-width:480px) {
+            padding: 0 .5rem;
+        }
         & .valor-timer {
             font-size: 1.3rem;
             text-align: left;
+            @media screen and (max-width:480px) {
+             font-size: 1rem;
+            }
+            @media screen and (max-width:321px) {
+             font-size: 1.3rem;
+            }
         }
         & .text-timer {
             font-size: .8rem;
-            text-align: left;
+            text-align: left
         }
     }
 }
