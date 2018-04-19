@@ -138,6 +138,12 @@
 				left: 66%;
 				width: 30%
 			}
+			.timer-producto{
+				padding: 0px !important;
+			}
+			.timer-container{
+				padding: 0px !important;
+			}
 	</style>
 </head>
 
@@ -148,7 +154,7 @@
 	</div>
 	<input type="hidden" id="listag" value="prueba_desarrollo_20180416">
 	<input type="hidden" id="nivel1" value="16">
-	<input type="hidden" id="bombazo" value="2018-04-18-20-0-0">
+	<input type="hidden" id="bombazo" value="15:16:00">
 	<div id="{etiqueta_categoria}" linktodo="{linktodo}" class="hide boton-categoria cont-btns col s12">
 		<a id="botonvermas" class="btn-a center-align center-block cyber-text waves-effect waves-light">VER MÁS<i class="icon-plus"></i></a>
 		<a id="botonvertodo" class="btn-a center-align center-block cyber-text waves-effect waves-light">VER TODO<i class="icon-plus"></i></a>
@@ -177,8 +183,6 @@
 			<span class="standar-agotado valign-wrapper">¡AGOTADO!
 				<i class="hide icon-alert-circle"></i>
 			</span>
-			<p class="text-agotado">
-				<i class="icon-access_alarms"></i> PERO ALGO SE VIENE!</p>
 		</div>
 		<porcentaje class="porcentaje {producto_template} {oculta_descuento}"><span class="number-porcentaje">{porcentaje}%</span> dcto.</porcentaje>
 		<a class="waves-effect waves-light link-product col s12 {producto_template}" href="{link}">
@@ -188,21 +192,16 @@
 			<!-- Tags Principales -->
 			<div class="tags-main valign-wrapper">
 				<span class="tags-despacho tags">
-					<i class="icon-truck"></i>
-					<p class="medium">DESPACHO</p>
-					<p class="medium">GRATIS</p>
+					<i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
+				</span>
+				<span class="hide tags-cuotas tags {oculta_cuotas}">
+					<img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="{cuotas} cuotas sin interes" alt="Tarjeta La Polar">
 				</span>
 				<span class="{tag-stock}">
-					<p class="big">{stock}</p>
-					<p class="medium">{stock_texto_unidades}</p>
-					<p class="medium">{stock_texto}</p>
-				</span>
-				<span class="tags-cuotas tags {oculta_cuotas}">
-					<img src="img/icon-tarjeta.png" class="tarjeta" alt="Tarjeta La Polar">
-					<p class="medium">{cuotas} CUOTAS</p>
-					<p class="medium">SIN INTERES</p>
+					<i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="{stock} {stock_texto_unidades} {stock_texto}"></i>
 				</span>
 			</div>
+
 			<!-- Tags Secundarios -->
 			<div class="tags-first valign-wrapper">
 				<span class="tags marca hide-on-small-only {oculta_marca}">{marca}</span>
@@ -211,7 +210,7 @@
 			<h1 class="description">{descripcion}</h1>
 			<h2 class="price-oferta">{precio}</h2>
 			<p class="normal-price">{precio_normal}</p>
-			<i class="icon-plus icon-plus-product"></i>
+			<i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
 		</a>
 	</div>
 	<!--BOTONES SHARE RRSS-->
@@ -342,46 +341,75 @@
 			</ul>
 		</nav>
 	</header>
-
-	<section class="container main-container-category timer-activo">
-		<div class="row timer-premios-container">
-		<!-- Contenido Timer -->
-			<div class="col s12 m6">
-				<div class="valign-wrapper">
-					<a href="#!"><img src="img/timer/producto-1.jpg" class="responsive-img"></a>
-					<div class="contenido-textual">
-						<h1>BOMBAZOS</h1>
-						<h2 class="description">Nombre Producto </h2>
-						<h3 class="price-oferta"><span class="signo-peso">$</span>220.000</h3>
-						<p class="normal-price">Antes: $330.000</p>
-						<a class="waves-effect waves-light btn-red" href="#!">VER MÁS</a>
-					</div>
-				</div>
-				<div class="content-timer">
-					<div class="col s1 m1 valor-timer dia">1</div>
-					<div class="col s1 m1 valor-timer">:</div>
-					<div class="col s1 m1 valor-timer hora">1</div>
-					<div class="col s1 m1 valor-timer">:</div>
-					<div class="col s1 m1 valor-timer minuto">1</div>
-					<div class="col s1 m1 valor-timer">:</div>
-					<div class="col s1 m1 valor-timer segundo">1</div>
-				</div>
-				<div class="content-text-timer">
-					<div class="col s1 m1 text-timer">Dias</div>
-					<div class="col s1 m1 text-timer">&nbsp;</div>
-					<div class="col s1 m1 text-timer">Horas</div>
-					<div class="col s1 m1 text-timer">&nbsp;</div>
-					<div class="col s1 m1 text-timer">Minutos</div>
-					<div class="col s1 m1 text-timer">&nbsp;</div>
-					<div class="col s1 m1 text-timer">Segundos</div>
-				</div>
+	<!-- SLIDER -->
+	<section class="slider-swiper-cont">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="img/slider/slider-1.jpg" class="responsive-img"></div>
+				<div class="swiper-slide"><img src="img/slider/slider-2.jpg" class="responsive-img"></div>
+				<div class="swiper-slide"><img src="img/slider/slider-1.jpg" class="responsive-img"></div>
+				<div class="swiper-slide"><img src="img/slider/slider-2.jpg" class="responsive-img"></div>
+				<div class="swiper-slide"><img src="img/slider/slider-1.jpg" class="responsive-img"></div>
 			</div>
-			<!-- Contenido Premios -->
-			<div class="col s12 m6">
-				<div class="valign-wrapper">Hola</div>
-			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
 		</div>
 	</section>
+	<section class="container main-container-category">
+        <div class="row timer-premios-container">
+		<!-- Contenido Timer -->
+            <div class="col s12 m12 l6 timer-container">
+				<div class="box-product valign-wrapper timer-producto">
+					<div class="container-agotado hide container-bombazo">
+						<!-- Tags Agotado -->
+						<span class="standar-agotado valign-wrapper">¡BOMBAZO FINALIZADO!
+							<i class="hide icon-alert-circle"></i>
+						</span>
+					</div>
+					<!-- Producto Timer -->
+                    <a href="#!"><img src="img/timer/producto-1.jpg" class="responsive-img img-bomba"></a>
+                    <div class="contenido-textual">
+                        <h1>BOMBAZOS</h1>
+                        <h2 class="description">Nombre Producto </h2>
+                        <h3 class="price-oferta"><span class="signo-peso">$</span>220.000</h3>
+                        <p class="normal-price">Antes: $330.000</p>
+                        <a class="waves-effect waves-light btn-red" href="#!">VER MÁS</a>
+                        <!-- Container Timer -->
+                        <div class="content-timer valign-wrapper">
+                            <div class="col s3 box-timer">
+                                <div class="valor-timer hora">00</div>
+                                <div class="text-timer">Horas</div>
+                            </div>
+                            <div class="col s1 box-valor">
+                                <div class="valor-timer">:</div>
+                            </div>
+                            <div class="col s3 box-timer">
+                                <div class="valor-timer minuto">00</div>
+                                <div class="text-timer">Minutos</div>
+                            </div>
+                            <div class="col s1 box-valor">
+                                <div class="valor-timer">:</div>
+                            </div>
+                            <div class="col s4 box-timer">
+                                <div class="valor-timer segundo">00</div>
+                                <div class="text-timer">Segundos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contenido Premios -->
+            <div class="col s12 m6 premios-container">
+                <div class="valign-wrapper">
+                    Hola
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 	<main>
