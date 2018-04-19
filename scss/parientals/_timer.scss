@@ -2,13 +2,17 @@
     margin: 0;
     margin-left: 0!important;
     margin-right: 0!important;
-    padding: 5rem 0;        
-    & .col {
+    padding: 4rem 0;        
+    & .timer-container, .premios-container {
         position: relative;
-        padding: 0 2rem;
-        & .valign-wrapper {
+        //padding: 0 2rem;
+        & .timer-producto{
             justify-content: center;
             align-items: center;
+            position: relative;
+        }
+        & .img-bomba {
+            width: 300px;
         }
         & .contenido-textual {
             h1,h2,h3,p,a {
@@ -38,29 +42,51 @@
             }
         }
     }
-    & .col:first-child {
-        border-right: 2px solid $lineColor;
-    }
-    & .col:last-child {
+    & .premios-container {
+        border-left: 2px solid $lineColor;
+        min-height: 350px;
     }
 }
 
 .btn-red {
     color: $redPolar;
-    border: 2px solid $redPolar;
+    border: 2px solid #ea082228;
     line-height: 40px;
-    padding: 0 1rem;
+    padding: 0 2rem;
     display: inline-block;
-    border-radius: 5px;
+    text-align: center;
+    border-radius: 50px;
     font-weight: 600;
     background: $whitePolar;
     transition: $transition1;
     letter-spacing: 1px;
     font-size: .9rem;
+
 }
 .btn-red:hover {
     box-shadow: 0 20px 30px -15px rgba(0,0,0,.4);
     background: $redPolar;
     color: $whitePolar;
 
+}
+
+//TIMER
+.content-timer {
+    justify-content: space-between;
+    align-items: center;
+    & .box-timer, & .box-valor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        & .valor-timer {
+            font-size: 1.3rem;
+            text-align: left;
+        }
+        & .text-timer {
+            font-size: .8rem;
+            text-align: left;
+        }
+    }
 }

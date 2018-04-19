@@ -110,3 +110,5 @@ var swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 });
+// Tooltips
+$('.tooltipped').tooltip({delay: 50});

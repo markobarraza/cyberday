@@ -92,7 +92,9 @@
     padding: 1.5rem!important;
     transition: $transition1;
     background: $whitePolar;
+    min-height: 480px!important;
     @media screen and (max-width: 480px) {
+        min-height: auto!important;
         border: none;
         padding: 1rem!important;
     }
@@ -620,7 +622,7 @@
 
 .box-caluga:hover {
     border: none;
-    box-shadow: none;
+    //box-shadow: none;
     transform: none;
 }
 
