@@ -87,64 +87,6 @@
 		ga('require', 'displayfeatures');
 		ga('send', 'pageview');
 	</script>
-	<style>
-			.product-image {
-				background: transparent url(https://tienda.lapolar.cl/images/load.gif) center no-repeat !important;
-				background-size: cover !important;
-				background-color: transparent !important;
-			}
-			.container{
-				width: 100%;
-			}
-			.btn-large{
-				background-color: #cb1126 !important;
-			}
-			.row{
-				margin-left: 0 !important;
-				margin-right: 0 !important;
-			}
-			.ocultarCaja{
-				display: none;
-			}
-			.valor-timer
-			{
-				font-family: unset;
-				font-size: 23px !important;
-				border-width: 0;
-				text-align: right;
-				width: 14% !important;
-				padding: 0 !important;
-				font-weight: bold;
-			}
-			.text-timer{
-				font-family: unset;
-				font-size: 10px !important;
-				border-width: 0;
-				text-align: right;
-				width: 14% !important;
-				padding: 0 !important;
-				font-weight: bold;
-			}
-			.content-timer
-			{
-				position: absolute;
-				top: 77%;
-				left: 66%;
-				width: 30%
-			}
-			.content-text-timer{
-				position: absolute;
-				top: 86%;
-				left: 66%;
-				width: 30%
-			}
-			.timer-producto{
-				padding: 0px !important;
-			}
-			.timer-container{
-				padding: 0px !important;
-			}
-	</style>
 </head>
 
 <body>
@@ -154,10 +96,14 @@
 	</div>
 	<input type="hidden" id="listag" value="prueba_desarrollo_20180416">
 	<input type="hidden" id="nivel1" value="16">
-	<input type="hidden" id="bombazo" value="15:16:00">
+	<input type="hidden" id="bombazo" value="17:50:00">
 	<div id="{etiqueta_categoria}" linktodo="{linktodo}" class="hide boton-categoria cont-btns col s12">
-		<a id="botonvermas" class="btn-a center-align center-block cyber-text waves-effect waves-light">VER MÁS<i class="icon-plus"></i></a>
-		<a id="botonvertodo" class="btn-a center-align center-block cyber-text waves-effect waves-light">VER TODO<i class="icon-plus"></i></a>
+		<a id="botonvermas" class="btn-a center-align center-block black-text waves-effect waves-light">VER MÁS
+			<i class="icon-plus"></i>
+		</a>
+		<a id="botonvertodo" class="btn-a center-align center-block black-text waves-effect waves-light">VER TODO
+			<i class="icon-plus"></i>
+		</a>
 	</div>
 	<div id="template-producto" class="box-product {clase_caluga} col {cambia_s} m6 l4 xl3 hide {producto_visible}">
 		<a class="waves-effect waves-light link-product col s12 {caluga_template}" href="{caluga_link}">
@@ -184,7 +130,8 @@
 				<i class="hide icon-alert-circle"></i>
 			</span>
 		</div>
-		<porcentaje class="porcentaje {producto_template} {oculta_descuento}"><span class="number-porcentaje">{porcentaje}%</span> dcto.</porcentaje>
+		<porcentaje class="porcentaje {producto_template} {oculta_descuento}">
+			<span class="number-porcentaje">{porcentaje}%</span> dcto.</porcentaje>
 		<a class="waves-effect waves-light link-product col s12 {producto_template}" href="{link}">
 			<div class="image" id="image">
 				<img data-original="/img/store/lista180/{imagen}" src="https://tienda.lapolar.cl/images/load.gif" alt="" class="lazy responsive-img product-image">
@@ -195,7 +142,8 @@
 					<i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
 				</span>
 				<span class="hide tags-cuotas tags {oculta_cuotas}">
-					<img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="{cuotas} cuotas sin interes" alt="Tarjeta La Polar">
+					<img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="{cuotas} cuotas sin interes"
+					 alt="Tarjeta La Polar">
 				</span>
 				<span class="{tag-stock}">
 					<i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="{stock} {stock_texto_unidades} {stock_texto}"></i>
@@ -205,17 +153,17 @@
 			<!-- Tags Secundarios -->
 			<div class="tags-first valign-wrapper">
 				<span class="tags marca hide-on-small-only {oculta_marca}">{marca}</span>
-				<span class="tags product-cyber {oculta_cyber}">{producto_cyber}</span>
+				<span class="tags product-cyber {producto_cyber}">PRODUCTO CYBER</span>
 			</div>
 			<h1 class="description">{descripcion}</h1>
 			<h2 class="price-oferta">{precio}</h2>
-			<p class="normal-price">{precio_normal}</p>
+			<p class="normal-price">Antes: {precio_normal}</p>
 			<i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
 		</a>
 	</div>
 	<!--BOTONES SHARE RRSS-->
 	<div class="hide-on-small-only fixed-action-btn vertical click-to-toggle">
-		<a class="btn-floating btn-large light-red waves-effect waves-light">
+		<a class="btn-floating btn-large light-red waves-effect waves-light black">
 			<i class="large icon-share-2"></i>
 		</a>
 		<ul>
@@ -345,11 +293,21 @@
 	<section class="slider-swiper-cont">
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide"><img src="img/slider/slider-1.jpg" class="responsive-img"></div>
-				<div class="swiper-slide"><img src="img/slider/slider-2.jpg" class="responsive-img"></div>
-				<div class="swiper-slide"><img src="img/slider/slider-1.jpg" class="responsive-img"></div>
-				<div class="swiper-slide"><img src="img/slider/slider-2.jpg" class="responsive-img"></div>
-				<div class="swiper-slide"><img src="img/slider/slider-1.jpg" class="responsive-img"></div>
+				<div class="swiper-slide">
+					<img src="img/slider/slider-1.jpg" class="responsive-img">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/slider/slider-2.jpg" class="responsive-img">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/slider/slider-1.jpg" class="responsive-img">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/slider/slider-2.jpg" class="responsive-img">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/slider/slider-1.jpg" class="responsive-img">
+				</div>
 			</div>
 			<!-- Add Pagination -->
 			<div class="swiper-pagination"></div>
@@ -359,10 +317,10 @@
 		</div>
 	</section>
 	<section class="container main-container-category">
-        <div class="row timer-premios-container">
-		<!-- Contenido Timer -->
-            <div class="col s12 m12 l6 timer-container">
-				<div class="box-product valign-wrapper timer-producto">
+		<div class="row timer-premios-container">
+			<!-- Contenido Timer -->
+			<div class="col s12 m12 l6 timer-container">
+				<div class="valign-wrapper timer-producto">
 					<div class="container-agotado hide container-bombazo">
 						<!-- Tags Agotado -->
 						<span class="standar-agotado valign-wrapper">¡BOMBAZO FINALIZADO!
@@ -370,46 +328,82 @@
 						</span>
 					</div>
 					<!-- Producto Timer -->
-                    <a href="#!"><img src="img/timer/producto-1.jpg" class="responsive-img img-bomba"></a>
-                    <div class="contenido-textual">
-                        <h1>BOMBAZOS</h1>
-                        <h2 class="description">Nombre Producto </h2>
-                        <h3 class="price-oferta"><span class="signo-peso">$</span>220.000</h3>
-                        <p class="normal-price">Antes: $330.000</p>
-                        <a class="waves-effect waves-light btn-red" href="#!">VER MÁS</a>
-                        <!-- Container Timer -->
-                        <div class="content-timer valign-wrapper">
-                            <div class="col s3 box-timer">
-                                <div class="valor-timer hora">00</div>
-                                <div class="text-timer">Horas</div>
-                            </div>
-                            <div class="col s1 box-valor">
-                                <div class="valor-timer">:</div>
-                            </div>
-                            <div class="col s3 box-timer">
-                                <div class="valor-timer minuto">00</div>
-                                <div class="text-timer">Minutos</div>
-                            </div>
-                            <div class="col s1 box-valor">
-                                <div class="valor-timer">:</div>
-                            </div>
-                            <div class="col s4 box-timer">
-                                <div class="valor-timer segundo">00</div>
-                                <div class="text-timer">Segundos</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Contenido Premios -->
-            <div class="col s12 m6 premios-container">
-                <div class="valign-wrapper">
-                    Hola
-                </div>
-            </div>
-        </div>
-    </section>
+					<a href="#!" class="">
+						<img src="img/timer/producto-1.jpg" class="responsive-img img-bomba">
+					</a>
+					<div class="contenido-textual">
+						<h1 class="hide">BOMBAZOS LAPOLAR</h1>
+						<span class="marca-bomba">MARCA</span>
+						<h2 class="description">Nombre Producto</h2>
+						<h3 class="price-oferta">
+							<span class="signo-peso">$</span>220.000</h3>
+						<p class="normal-price">Antes: $330.000</p>
+						<a class="waves-effect waves-light btn-red" href="#!">VER MÁS</a>
+						<!-- Container Timer -->
+						<div class="content-timer valign-wrapper">
+							<div class="col s3 box-timer">
+								<div class="valor-timer hora">00</div>
+								<div class="text-timer">HRS</div>
+							</div>
+							<div class="col s1 box-valor">
+								<div class="valor-timer">:</div>
+							</div>
+							<div class="col s3 box-timer">
+								<div class="valor-timer minuto">00</div>
+								<div class="text-timer">MIN</div>
+							</div>
+							<div class="col s1 box-valor">
+								<div class="valor-timer">:</div>
+							</div>
+							<div class="col s3 box-timer">
+								<div class="valor-timer segundo">00</div>
+								<div class="text-timer">SEG</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Contenido Premios -->
+			<div class="col s12 m6 premios-container">
+				<div class="valign-wrapper timer-producto">
+					<!-- Producto Timer -->
+					<a href="#!" class="">
+						<img src="img/timer/producto-1.jpg" class="responsive-img img-bomba">
+					</a>
+					<div class="contenido-textual">
+						<h1 class="hide">BOMBAZOS LAPOLAR</h1>
+						<span class="marca-bomba">MARCA</span>
+						<h2 class="description">Nombre Producto</h2>
+						<h3 class="price-oferta">
+							<span class="signo-peso">$</span>220.000</h3>
+						<p class="normal-price">Antes: $330.000</p>
+						<a class="waves-effect waves-light btn-red" href="#!">VER MÁS</a>
+						<!-- Container Timer -->
+						<div class="content-timer valign-wrapper">
+							<div class="col s3 box-timer">
+								<div class="valor-timer hora">00</div>
+								<div class="text-timer">HRS</div>
+							</div>
+							<div class="col s1 box-valor">
+								<div class="valor-timer">:</div>
+							</div>
+							<div class="col s3 box-timer">
+								<div class="valor-timer minuto">00</div>
+								<div class="text-timer">MIN</div>
+							</div>
+							<div class="col s1 box-valor">
+								<div class="valor-timer">:</div>
+							</div>
+							<div class="col s3 box-timer">
+								<div class="valor-timer segundo">00</div>
+								<div class="text-timer">SEG</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<main>
@@ -542,27 +536,6 @@
 						<h1 class="black-text"></h1>
 						<h3 class="black-text center-align"></h3>
 						<div class="line-title hide"></div>
-					</div>
-				</div>
-
-				<!--Open Contenedor Productos-->
-				<div id="productos" class="container-productos cont-productos">
-					<div id="template-producto" class="product">
-						<a class="waves-effect waves-light ancla-product" href="{link}">
-							<div class="image" id="image">
-								<img src="/img/store/lista180/{imagen}" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
-							</div>
-							<h4 class="description">{descripcion}</h4>
-							<h2 class="price-web-services">{precio}</h2>
-							<h5 class="normal-price">Precio Normal: {precio_normal}</h5>
-							<porcentaje class="center-align porcentaje">{porcentaje} de dcto.</porcentaje>
-							<a href="{link}" class="btn-oferta" target="_blank">VER OFERTA</a>
-							<p class="grey-text center-align stock">Stock {stock} unidades</p>
-							<span>{marca}</span>
-							<span>{precio_tlp}</span>
-							<span>{cuotas}</span>
-							<span>{valor_cuota}</span>
-						</a>
 					</div>
 				</div>
 			</section>
