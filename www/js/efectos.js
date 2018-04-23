@@ -87,8 +87,10 @@ var swiper = new Swiper('.swiper-container', {
 // Tooltips
 $(document).ready(function(){
     $('.tooltipped').tooltip({delay: 50});
-  });
+});
 //Scrollspy
 $(document).ready(function(){
-$('.scrollspy').scrollSpy();
+$('.scrollspy').scrollSpy({
+    scrollOffset: 50
+});
 });

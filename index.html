@@ -127,7 +127,7 @@
 
     <!--HEADER-->
     <header class="header_main navbar-fixed">
-        <nav class="black nav-extended nav-menu">
+        <nav class="black nav-extended nav-menu line-menu">
             <div class="nav-wrapper">
                 <!-- Menu Toggle Mobile -->
                 <a href="#" data-activates="mobile-menu" class="left button-collapse">
@@ -135,25 +135,32 @@
                 </a>
                 <ul class="side-nav" id="mobile-menu">
                     <li>
-                            <a href="#!"><i class="icon-home2"></i>Home</a>
+                        <a href="#!">
+                            <i class="icon-home2"></i>Home</a>
                     </li>
                     <li>
-                        <a href="#!"><i class="icon-wifi2"></i>Tecnologia</a>
+                        <a href="#!">
+                            <i class="icon-wifi2"></i>Tecnologia</a>
                     </li>
                     <li>
-                        <a href="#!"><i class="icon-speaker2"></i>Línea Blanca</a>
+                        <a href="#!">
+                            <i class="icon-speaker2"></i>Línea Blanca</a>
                     </li>
                     <li>
-                        <a href="#!"><i class="icon-inbox2"></i>Hogar</a>
+                        <a href="#!">
+                            <i class="icon-inbox2"></i>Hogar</a>
                     </li>
                     <li>
-                        <a href="#!"><i class="icon-inbox2"></i>Deportes</a>
+                        <a href="#!">
+                            <i class="icon-inbox2"></i>Deportes</a>
                     </li>
                     <li>
-                        <a href="#!"><i class="icon-inbox2"></i>Niños</a>
+                        <a href="#!">
+                            <i class="icon-inbox2"></i>Niños</a>
                     </li>
                     <li>
-                        <a href="#!"><i class="icon-scissors"></i>Moda y Belleza</a>
+                        <a href="#!">
+                            <i class="icon-scissors"></i>Moda y Belleza</a>
                     </li>
                 </ul>
                 <!-- Menu Premios Mobile -->
@@ -172,7 +179,7 @@
                     </li>
                 </ul>
                 <!-- Menu Main Desktop -->
-                <a href="" class="brand-logo">
+                <a href="#home" class="brand-logo">
                     <img src="img/isotipo.png" class="logotipo-menu responsive-img">
                 </a>
                 <ul id="nav-desktop" class="nav-desktop right hide-on-med-and-down">
@@ -201,49 +208,42 @@
                             <i class="icon-link icon-airplay2"></i>Niños</a>
                     </li>
                     <li>
-                        <a class=" link-menu-desktop" href="#modaybelleza">
+                        <a class=" link-menu-desktop" href="#modabelleza">
                             <i class="icon-link icon-aperture"></i>Moda y Belleza</a>
                     </li>
                 </ul>
             </div>
             <!-- Submenu Desktop -->
-            <div class="nav-content">
-                <ul class="sub-menu-desktop efecto-menu">
-                    <li class="hide-on-med-and-up">
-                        <a class="link-sub-menu link-title" href="#home">Tecnología</a>
+            <div class="nav-content hide-on-large-only">
+                <ul class="sub-menu-desktop">
+                    <li class="hide-on-large-only">
+                        <a class="link-sub-menu link-title" href="#home">Home</a>
                     </li>
                     <li>
-                        <a class="link-sub-menu icon-tv2 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Televisores"
-                            href="#televisores"></a>
+                        <a class="link-sub-menu icon-tv2 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Televisores" href="#televisores"></a>
                     </li>
                     <li>
-                        <a class="link-sub-menu icon-smartphone tooltipped" data-position="bottom" data-delay="50" data-tooltip="Teléfonos"
-                            href="#telefonos"></a>
+                        <a class="link-sub-menu icon-smartphone tooltipped" data-position="bottom" data-delay="50" data-tooltip="Teléfonos" href="#telefonos"></a>
                     </li>
                     <li>
-                        <a class="link-sub-menu icon-monitor tooltipped" data-position="bottom" data-delay="50" data-tooltip="Computación"
-                            href="#computacion"></a>
+                        <a class="link-sub-menu icon-monitor tooltipped" data-position="bottom" data-delay="50" data-tooltip="Computación" href="#computacion"></a>
                     </li>
                     <li>
-                        <a class="link-sub-menu icon-box tooltipped" data-position="bottom" data-delay="50" data-tooltip="Videojuegos"
-                            href="#videjuegos"></a>
+                        <a class="link-sub-menu icon-box tooltipped" data-position="bottom" data-delay="50" data-tooltip="Videojuegos" href="#videjuegos"></a>
                     </li>
                     <li>
-                        <a class="link-sub-menu icon-headphones tooltipped" data-position="bottom" data-delay="50" data-tooltip="Audio"
-                            href="#audio"></a>
+                        <a class="link-sub-menu icon-headphones tooltipped" data-position="bottom" data-delay="50" data-tooltip="Audio" href="#audio"></a>
                     </li>
                     <li>
-                        <a class="link-sub-menu icon-camera2 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Cámaras"
-                            href="#camaras">
+                        <a class="link-sub-menu icon-camera2 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Cámaras" href="#camaras">
                     </li>
                     <li>
-                        <a class="link-sub-menu icon-printer tooltipped" data-position="bottom" data-delay="50" data-tooltip="Impresoras"
-                            href="#impresoras"></a>
+                        <a class="link-sub-menu icon-printer tooltipped" data-position="bottom" data-delay="50" data-tooltip="Impresoras" href="#impresoras"></a>
                     </li>
                 </ul>
             </div>
-            <!-- Menu Main Mobile -->
-            <ul id="nav-mobile" class="hide hide-on-med-and-up nav-mobile">
+            <!-- Menu Main Mobile Home -->
+            <ul id="nav-mobile" class="hide hide-on-large-only nav-mobile efecto-menu">
                 <li>
                     <a class="link-menu-mobile" href="#tecnologia">
                         <i class="icon-link icon-wifi2 icon-link-active"></i>
@@ -270,7 +270,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="link-menu-mobile" href="#modaybelleza">
+                    <a class="link-menu-mobile" href="#modabelleza">
                         <i class="icon-link icon-aperture"></i>
                     </a>
                 </li>
@@ -660,6 +660,536 @@
                 </div>
             </div>
         </section>
+
+        <!-- TECNOLOGIA SECTION -->
+        <section id="hogar" class="scrollspy container main-container-category">
+            <!-- Title section -->
+            <div class="title-section valign-wrapper">
+                <div class="hide-on-small-only icons-title center-align">
+                    <i class="iconos cyber-text icon-smartphone"></i>
+                    <i class="iconos black-text icon-tv2"></i>
+                    <i class="iconos red-polar-text icon-monitor"></i>
+                </div>
+                <h1 class="center-align">Hogar</h1>
+                <div class="hide-on-small-only icons-title center-align">
+                    <i class="iconos red-polar-text icon-printer"></i>
+                    <i class="iconos black-text icon-camera2"></i>
+                    <i class="iconos cyber-text icon-headphones"></i>
+                </div>
+            </div>
+
+            <!-- Container Dinamic Products -->
+            <div id="productos" class="container-productos row">
+
+                <!-- Caluga Descuento -->
+                <div id="template-producto" class="waves-effect waves-dark box-product box-caluga col s12 m6 l4 xl3">
+                    <a class="link-product col s12" href="{link}">
+                        <div class="image calugas-container" id="image">
+                            <img class="caluga cal-1 responsive-img" src="img/calugas/producto.gif" alt="Llamado de Descuento">
+                            <img class="caluga cal-2 responsive-img" src="img/calugas/descuento.png" alt="Llamado de Descuento">
+                        </div>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products Original Template -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje">
+                        <span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                <i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
+                            </span>
+                            <span class="hide tags-cuotas tags">
+                                <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
+                                    alt="Tarjeta La Polar">
+                            </span>
+                            <span class="hide tags-stock tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="100 unidades"></i>
+                            </span>
+                            <span class="tags-stock tags-stock-active tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="últimas unidades"></i>
+                            </span>
+                        </div>
+
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <div>
+                            <h1 class="description">{descripcion} </h1>
+                            <h2 class="price-oferta">{precio}</h2>
+                            <p class="normal-price">Antes: {precio_normal}</p>
+                            <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
+                        </div>
+                    </a>
+                </div>
+                <!-- Products Agotado Original -->
+                <div id="template-producto" class="box-product box-agotado col s6 m6 l4 xl3">
+                    <div class="container-agotado col s12">
+                        <!-- Productos Relacionados -->
+                        <div class="hide white product-relacionado valign-wrapper">
+                            <i class="icon-bookmark icon-relacionado"></i>
+                            <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
+                            <div class="content-relacionado valign-wrapper">
+                                <h3 class="text-relacionado">Próximos Productos</h3>
+                                <a class="link-relacionado" href="#!">VER MÁS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agotado Standar -->
+                    <div class="container-agotado">
+                        <!-- Tags Agotado -->
+                        <span class="standar-agotado valign-wrapper">¡AGOTADO!
+                            <i class="hide icon-alert-circle"></i>
+                        </span>
+                    </div>
+
+                    <!-- Product Oculto debajo del agotado -->
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                <i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
+                            </span>
+                            <span class="hide tags-cuotas tags">
+                                <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
+                                    alt="Tarjeta La Polar">
+                            </span>
+                            <span class="hide tags-stock tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="100 unidades"></i>
+                            </span>
+                            <span class="tags-stock tags-stock-active tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="últimas unidades"></i>
+                            </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">Antes: {precio_normal}</p>
+                        <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
+                    </a>
+                </div>
+                <!-- Botones -->
+                <div class="cont-btns col s12">
+                    <a class="btn-a center-align center-block black-text waves-effect waves-light" href="#">VER MÁS TECNOLOG&Iacute;A
+                        <i class="icon-plus"></i>
+                    </a>
+                    <a class="hide btn-a center-align center-block black-text waves-effect waves-light" href="#">VER TODO TECNOLOG&Iacute;A
+                        <i class="icon-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="deportes" class="scrollspy container main-container-category">
+            <!-- Title section -->
+            <div class="title-section valign-wrapper">
+                <div class="hide-on-small-only icons-title center-align">
+                    <i class="iconos cyber-text icon-smartphone"></i>
+                    <i class="iconos black-text icon-tv2"></i>
+                    <i class="iconos red-polar-text icon-monitor"></i>
+                </div>
+                <h1 class="center-align">Deportes</h1>
+                <div class="hide-on-small-only icons-title center-align">
+                    <i class="iconos red-polar-text icon-printer"></i>
+                    <i class="iconos black-text icon-camera2"></i>
+                    <i class="iconos cyber-text icon-headphones"></i>
+                </div>
+            </div>
+
+            <!-- Container Dinamic Products -->
+            <div id="productos" class="container-productos row">
+
+                <!-- Caluga Descuento -->
+                <div id="template-producto" class="waves-effect waves-dark box-product box-caluga col s12 m6 l4 xl3">
+                    <a class="link-product col s12" href="{link}">
+                        <div class="image calugas-container" id="image">
+                            <img class="caluga cal-1 responsive-img" src="img/calugas/producto.gif" alt="Llamado de Descuento">
+                            <img class="caluga cal-2 responsive-img" src="img/calugas/descuento.png" alt="Llamado de Descuento">
+                        </div>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products Original Template -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje">
+                        <span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                <i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
+                            </span>
+                            <span class="hide tags-cuotas tags">
+                                <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
+                                    alt="Tarjeta La Polar">
+                            </span>
+                            <span class="hide tags-stock tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="100 unidades"></i>
+                            </span>
+                            <span class="tags-stock tags-stock-active tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="últimas unidades"></i>
+                            </span>
+                        </div>
+
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <div>
+                            <h1 class="description">{descripcion} </h1>
+                            <h2 class="price-oferta">{precio}</h2>
+                            <p class="normal-price">Antes: {precio_normal}</p>
+                            <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
+                        </div>
+                    </a>
+                </div>
+                <!-- Products Agotado Original -->
+                <div id="template-producto" class="box-product box-agotado col s6 m6 l4 xl3">
+                    <div class="container-agotado col s12">
+                        <!-- Productos Relacionados -->
+                        <div class="hide white product-relacionado valign-wrapper">
+                            <i class="icon-bookmark icon-relacionado"></i>
+                            <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
+                            <div class="content-relacionado valign-wrapper">
+                                <h3 class="text-relacionado">Próximos Productos</h3>
+                                <a class="link-relacionado" href="#!">VER MÁS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agotado Standar -->
+                    <div class="container-agotado">
+                        <!-- Tags Agotado -->
+                        <span class="standar-agotado valign-wrapper">¡AGOTADO!
+                            <i class="hide icon-alert-circle"></i>
+                        </span>
+                    </div>
+
+                    <!-- Product Oculto debajo del agotado -->
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                <i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
+                            </span>
+                            <span class="hide tags-cuotas tags">
+                                <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
+                                    alt="Tarjeta La Polar">
+                            </span>
+                            <span class="hide tags-stock tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="100 unidades"></i>
+                            </span>
+                            <span class="tags-stock tags-stock-active tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="últimas unidades"></i>
+                            </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">Antes: {precio_normal}</p>
+                        <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
+                    </a>
+                </div>
+                <!-- Botones -->
+                <div class="cont-btns col s12">
+                    <a class="btn-a center-align center-block black-text waves-effect waves-light" href="#">VER MÁS TECNOLOG&Iacute;A
+                        <i class="icon-plus"></i>
+                    </a>
+                    <a class="hide btn-a center-align center-block black-text waves-effect waves-light" href="#">VER TODO TECNOLOG&Iacute;A
+                        <i class="icon-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- TECNOLOGIA SECTION -->
+        <section id="ninos" class="scrollspy container main-container-category">
+            <!-- Title section -->
+            <div class="title-section valign-wrapper">
+                <div class="hide-on-small-only icons-title center-align">
+                    <i class="iconos cyber-text icon-smartphone"></i>
+                    <i class="iconos black-text icon-tv2"></i>
+                    <i class="iconos red-polar-text icon-monitor"></i>
+                </div>
+                <h1 class="center-align">Niños</h1>
+                <div class="hide-on-small-only icons-title center-align">
+                    <i class="iconos red-polar-text icon-printer"></i>
+                    <i class="iconos black-text icon-camera2"></i>
+                    <i class="iconos cyber-text icon-headphones"></i>
+                </div>
+            </div>
+
+            <!-- Container Dinamic Products -->
+            <div id="productos" class="container-productos row">
+
+                <!-- Caluga Descuento -->
+                <div id="template-producto" class="waves-effect waves-dark box-product box-caluga col s12 m6 l4 xl3">
+                    <a class="link-product col s12" href="{link}">
+                        <div class="image calugas-container" id="image">
+                            <img class="caluga cal-1 responsive-img" src="img/calugas/producto.gif" alt="Llamado de Descuento">
+                            <img class="caluga cal-2 responsive-img" src="img/calugas/descuento.png" alt="Llamado de Descuento">
+                        </div>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products Original Template -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje">
+                        <span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                <i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
+                            </span>
+                            <span class="hide tags-cuotas tags">
+                                <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
+                                    alt="Tarjeta La Polar">
+                            </span>
+                            <span class="hide tags-stock tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="100 unidades"></i>
+                            </span>
+                            <span class="tags-stock tags-stock-active tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="últimas unidades"></i>
+                            </span>
+                        </div>
+
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <div>
+                            <h1 class="description">{descripcion} </h1>
+                            <h2 class="price-oferta">{precio}</h2>
+                            <p class="normal-price">Antes: {precio_normal}</p>
+                            <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
+                        </div>
+                    </a>
+                </div>
+                <!-- Products Agotado Original -->
+                <div id="template-producto" class="box-product box-agotado col s6 m6 l4 xl3">
+                    <div class="container-agotado col s12">
+                        <!-- Productos Relacionados -->
+                        <div class="hide white product-relacionado valign-wrapper">
+                            <i class="icon-bookmark icon-relacionado"></i>
+                            <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
+                            <div class="content-relacionado valign-wrapper">
+                                <h3 class="text-relacionado">Próximos Productos</h3>
+                                <a class="link-relacionado" href="#!">VER MÁS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agotado Standar -->
+                    <div class="container-agotado">
+                        <!-- Tags Agotado -->
+                        <span class="standar-agotado valign-wrapper">¡AGOTADO!
+                            <i class="hide icon-alert-circle"></i>
+                        </span>
+                    </div>
+
+                    <!-- Product Oculto debajo del agotado -->
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                <i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
+                            </span>
+                            <span class="hide tags-cuotas tags">
+                                <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
+                                    alt="Tarjeta La Polar">
+                            </span>
+                            <span class="hide tags-stock tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="100 unidades"></i>
+                            </span>
+                            <span class="tags-stock tags-stock-active tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="últimas unidades"></i>
+                            </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">Antes: {precio_normal}</p>
+                        <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
+                    </a>
+                </div>
+                <!-- Botones -->
+                <div class="cont-btns col s12">
+                    <a class="btn-a center-align center-block black-text waves-effect waves-light" href="#">VER MÁS TECNOLOG&Iacute;A
+                        <i class="icon-plus"></i>
+                    </a>
+                    <a class="hide btn-a center-align center-block black-text waves-effect waves-light" href="#">VER TODO TECNOLOG&Iacute;A
+                        <i class="icon-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECNOLOGIA SECTION -->
+        <section id="modabelleza" class="scrollspy container main-container-category">
+            <!-- Title section -->
+            <div class="title-section valign-wrapper">
+                <div class="hide-on-small-only icons-title center-align">
+                    <i class="iconos cyber-text icon-smartphone"></i>
+                    <i class="iconos black-text icon-tv2"></i>
+                    <i class="iconos red-polar-text icon-monitor"></i>
+                </div>
+                <h1 class="center-align">Moda y Belleza</h1>
+                <div class="hide-on-small-only icons-title center-align">
+                    <i class="iconos red-polar-text icon-printer"></i>
+                    <i class="iconos black-text icon-camera2"></i>
+                    <i class="iconos cyber-text icon-headphones"></i>
+                </div>
+            </div>
+
+            <!-- Container Dinamic Products -->
+            <div id="productos" class="container-productos row">
+
+                <!-- Caluga Descuento -->
+                <div id="template-producto" class="waves-effect waves-dark box-product box-caluga col s12 m6 l4 xl3">
+                    <a class="link-product col s12" href="{link}">
+                        <div class="image calugas-container" id="image">
+                            <img class="caluga cal-1 responsive-img" src="img/calugas/producto.gif" alt="Llamado de Descuento">
+                            <img class="caluga cal-2 responsive-img" src="img/calugas/descuento.png" alt="Llamado de Descuento">
+                        </div>
+                        <i class="icon-plus icon-plus-product"></i>
+                    </a>
+                </div>
+                <!-- Products Original Template -->
+                <div id="template-producto" class="box-product col s6 m6 l4 xl3">
+                    <porcentaje class="porcentaje">
+                        <span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                <i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
+                            </span>
+                            <span class="hide tags-cuotas tags">
+                                <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
+                                    alt="Tarjeta La Polar">
+                            </span>
+                            <span class="hide tags-stock tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="100 unidades"></i>
+                            </span>
+                            <span class="tags-stock tags-stock-active tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="últimas unidades"></i>
+                            </span>
+                        </div>
+
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <div>
+                            <h1 class="description">{descripcion} </h1>
+                            <h2 class="price-oferta">{precio}</h2>
+                            <p class="normal-price">Antes: {precio_normal}</p>
+                            <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
+                        </div>
+                    </a>
+                </div>
+                <!-- Products Agotado Original -->
+                <div id="template-producto" class="box-product box-agotado col s6 m6 l4 xl3">
+                    <div class="container-agotado col s12">
+                        <!-- Productos Relacionados -->
+                        <div class="hide white product-relacionado valign-wrapper">
+                            <i class="icon-bookmark icon-relacionado"></i>
+                            <img class="img-relacionado responsive-img" src="img/productos/product-1.jpg">
+                            <div class="content-relacionado valign-wrapper">
+                                <h3 class="text-relacionado">Próximos Productos</h3>
+                                <a class="link-relacionado" href="#!">VER MÁS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agotado Standar -->
+                    <div class="container-agotado">
+                        <!-- Tags Agotado -->
+                        <span class="standar-agotado valign-wrapper">¡AGOTADO!
+                            <i class="hide icon-alert-circle"></i>
+                        </span>
+                    </div>
+
+                    <!-- Product Oculto debajo del agotado -->
+                    <a class="waves-effect waves-light link-product col s12" href="{link}">
+                        <div class="image" id="image">
+                            <img src="img/productos/product-1.jpg" data-original="/img/store/lista180/{imagen}" alt="" class="lazy responsive-img product-image">
+                        </div>
+                        <!-- Tags Principales -->
+                        <div class="tags-main valign-wrapper">
+                            <span class="tags-despacho tags">
+                                <i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
+                            </span>
+                            <span class="hide tags-cuotas tags">
+                                <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
+                                    alt="Tarjeta La Polar">
+                            </span>
+                            <span class="hide tags-stock tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="100 unidades"></i>
+                            </span>
+                            <span class="tags-stock tags-stock-active tags">
+                                <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="últimas unidades"></i>
+                            </span>
+                        </div>
+                        <!-- Tags Secundarios -->
+                        <div class="tags-first valign-wrapper">
+                            <span class="tags marca hide-on-small-only">{marca}</span>
+                            <span class="tags product-cyber">{producto_cyber}</span>
+                        </div>
+                        <h1 class="description">Notebook 8 GB RAM 1 TB DD Intel Core i5 NG</h1>
+                        <h2 class="price-oferta">{precio}</h2>
+                        <p class="normal-price">Antes: {precio_normal}</p>
+                        <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
+                    </a>
+                </div>
+                <!-- Botones -->
+                <div class="cont-btns col s12">
+                    <a class="btn-a center-align center-block black-text waves-effect waves-light" href="#">VER MÁS TECNOLOG&Iacute;A
+                        <i class="icon-plus"></i>
+                    </a>
+                    <a class="hide btn-a center-align center-block black-text waves-effect waves-light" href="#">VER TODO TECNOLOG&Iacute;A
+                        <i class="icon-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 

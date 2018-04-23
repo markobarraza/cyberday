@@ -17,7 +17,7 @@
         }
     }
     & .nav-menu {
-        box-shadow: 0 1px 0 #353535;
+        
     }
     //UL Menu Main Desktop
     & .nav-desktop {
@@ -91,64 +91,56 @@
     }
     //Sub-Menu Desktop
     & .nav-content {
-    & .sub-menu-desktop {
-        background: $whitePolar;
-        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
-        margin: 0 auto;
-        position: relative;
-        overflow-x: auto;
-        overflow-y: hidden;
-        height: 56px;
-        width: 100%;
-        white-space: nowrap;
-        display: flex;
-        justify-content: space-around;
-        transform: translateY(20px);
-        @media screen and (max-width:768px) {
-            opacity: 0;
-            visibility: hidden;
-            transition: $transition1;
-        }
-        @media screen and (max-width:480px) {
-            justify-content: flex-start;
-            position: fixed;
-            bottom: 0;
-            box-shadow: 0 -1px 0px 0 $lineColor;
-        }
-        & li {
-            flex: auto;
-        }
-        & .link-sub-menu {
-            color: $blackPolar;
-            line-height: 56px;
-            font-size: 1.5rem;
+        & .sub-menu-desktop {
+            background: $whitePolar;
+            box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+            position: relative;
+            overflow-x: auto;
+            overflow-y: hidden;
+            height: 56px;
+            width: 100%;
+            white-space: nowrap;
             display: flex;
-            justify-content: center;
-            transition: $transition1;
+            justify-content: space-around;
+            @media screen and (max-width:768px) {
+                justify-content: flex-start;
+                position: fixed;
+                bottom: 0;
+                box-shadow: 0 -1px 0px 0 $lineColor;
+            }
+            & li {
+                flex: auto;
+            }
+            & .link-sub-menu {
+                color: $blackPolar;
+                line-height: 56px;
+                font-size: 24px;
+                display: flex;
+                justify-content: center;
+                transition: $transition1;
+                @media screen and (max-width:480px) {
+                    padding: 0 1.3rem;
+                }
+                @media screen and (max-width:321px) {
+                    font-size: 22px;
+                }
+            }
+            & .link-sub-menu:hover, .link-sub-menu:active, .link-sub-menu:focus {
+                color: $redPolar;
+                background: transparent;
+            }
+            & .link-title {
+                font-size: 1rem;
+                border-right: 1px solid #f0f0f0;
+            }
             @media screen and (max-width:480px) {
-                padding: 0 1.3rem;
+                & .link-title:hover, & .link-title:active, & .link-title:focus{
+                    color: $blackPolar!important;
+                }
             }
         }
-        & .link-sub-menu:hover, .link-sub-menu:active, .link-sub-menu:focus {
-            color: $redPolar;
-            background: transparent;
-        }
-        & .link-title {
-            font-size: 1rem;
-            border-right: 1px solid #f0f0f0;
-        }
-        @media screen and (max-width:480px) {
-            & .link-title:hover, & .link-title:active, & .link-title:focus{
-                color: $blackPolar!important;
-            }
-        }
-    }
-        & .menu-fixed {
-            opacity: 1;
-            visibility:visible;
-            transition: $transition1;
-            transform: translateY(0px);
-        }
+
     }
     //Menu Main Mobile
     & .nav-mobile {
@@ -159,6 +151,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: $transition1;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+        box-shadow: none!important;
         & .link-menu-mobile {
             display: flex;
             justify-content: space-between;
@@ -171,3 +168,11 @@
 
 }
 
+.menu-fixed {
+    opacity: 1!important;
+    visibility:visible!important;
+    transform: translateY(0px)!important;
+}
+.line-menu {
+    box-shadow: 0 1px 0 #353535;
+}
