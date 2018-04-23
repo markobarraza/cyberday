@@ -27,32 +27,6 @@ $(window).on('scroll', function() {
         $('.efecto-menu').removeClass('menu-fixed');
     }
 });
-// Scroll Nav Fixed
-$(function() {
-    $('a[href*=#]').click(function() {
-
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-            location.hostname == this.hostname) {
-
-            var $target = $(this.hash);
-
-            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
-
-            if ($target.length) {
-
-                var targetOffset = $target.offset().top;
-
-                $('html,body').animate({
-                    scrollTop: targetOffset
-                }, 500);
-
-                return false;
-            }
-        }
-    });
-
-});
-
 // Scroll Top 
 // Comprobar si estamos, al menos, 100 px por debajo de la posición top
 // para mostrar o esconder el botón
@@ -114,3 +88,7 @@ var swiper = new Swiper('.swiper-container', {
 $(document).ready(function(){
     $('.tooltipped').tooltip({delay: 50});
   });
+//Scrollspy
+$(document).ready(function(){
+$('.scrollspy').scrollSpy();
+});
