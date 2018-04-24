@@ -17,7 +17,7 @@
         }
     }
     & .nav-menu {
-        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+        //box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
     }
     //TOOGLE MENU
     & .nav-toggle-menu {
@@ -30,6 +30,7 @@
             color: $blackPolar;
             & .icon-toggle-menu {
                 margin-right: 15px;
+                font-size: 1.4rem;
                 color: $blackPolar;
             }
         }

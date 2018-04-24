@@ -16,11 +16,11 @@ footer {
         justify-content: center;
         text-align: center;
         padding-bottom: 6rem;
-        padding-top: 2rem;
+        padding-top: 3rem;
     }
     &  .logo-footer img {
-        max-width: 180px;
-            @media screen and (max-width: 480px) {
+        max-width: 60px;
+        @media screen and (max-width: 480px) {
                 margin-bottom: 15px;
             }
     }
