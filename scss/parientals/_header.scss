@@ -17,7 +17,22 @@
         }
     }
     & .nav-menu {
-        
+        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+    //TOOGLE MENU
+    & .nav-toggle-menu {
+        & .user-view {
+            img:first-child {
+                margin-right: 1rem;
+            }
+        }
+        & a {
+            color: $blackPolar;
+            & .icon-toggle-menu {
+                margin-right: 15px;
+                color: $blackPolar;
+            }
+        }
     }
     //UL Menu Main Desktop
     & .nav-desktop {
@@ -27,7 +42,7 @@
             font-size: 1rem;
             display: flex;
             align-items: center;
-            color: grey;
+            color: $whitePolar;
             transition: $transition1;
             & .icon-link {
                 margin-right: .5rem;
@@ -60,7 +75,7 @@
             }
         }
         //BTN ACTIVADO
-        & .active, .active:active, .active:focus {
+        & .active {
             background: transparent;
             color: $whitePolar;
             & .icon-link {
@@ -93,7 +108,7 @@
     & .nav-content {
         & .sub-menu-desktop {
             background: $whitePolar;
-            box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+            //box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
             margin: 0 auto;
             position: relative;
             overflow-x: auto;
@@ -108,6 +123,14 @@
                 position: fixed;
                 bottom: 0;
                 box-shadow: 0 -1px 0px 0 $lineColor;
+            }
+            & .sombra-menu::after {            
+                content: "";
+                position: fixed;
+                width: 80px;
+                height: 100%;
+                right: 0;
+                @include degrade1;
             }
             & li {
                 flex: auto;
@@ -126,9 +149,9 @@
                     font-size: 22px;
                 }
             }
-            & .link-sub-menu:hover, .link-sub-menu:active, .link-sub-menu:focus {
+            & .active, & .link-sub-menu:hover{
                 color: $redPolar;
-                background: transparent;
+                background: $lineColor;
             }
             & .link-title {
                 font-size: 1rem;
@@ -156,12 +179,59 @@
         visibility: hidden;
         transform: translateY(20px);
         box-shadow: none!important;
-        & .link-menu-mobile {
-            display: flex;
-            justify-content: space-between;
+        border-top: solid 1px #323232;
+        & li {
+            //width: 100%;
+            & .link-menu-mobile {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: $transition1;
+                border-radius: 50px;
+                & .icon-link {
+                    line-height: inherit;
+                }
+            }
+        }
+        & .active {
+            color: $redPolar;
+            animation: active-menu 1s 1 alternate 0s;
+        }
+    }
+    //RRSS MOBILE
+    & .redes-sociales-mobile {
+        align-items: center;
+        justify-content: flex-start;
+        & .share {
+            padding: 0;
+            padding-left: 32px;
+            font-size: 1rem;
+            margin-right: 5px;
+            color: $myParrafo;
+        }
+        & .redes {
+            justify-content: center;
             align-items: center;
-            & .icon-link {
-                line-height: inherit;
+            & .icon-redes-mobile {
+                text-align: center;
+                padding: 0;
+                margin: auto;
+                width: 48px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                line-height: 48px;
+                height: 48px;
+                & i {
+                    height: auto;
+                    font-size: 1.3rem;
+                }
+                & .icon-facebook {
+                    color: $facebook;
+                }
+                & .icon-tweet {
+                    color: $twitter;
+                }
             }
         }
     }

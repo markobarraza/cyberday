@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 768px) {
     .main-container-category:last-child {
-        margin-bottom: 56px;
+        //margin-bottom: 56px;
     }
 }
 
@@ -528,14 +528,15 @@
         width: 100%;
         font-size: 1.1rem;
         letter-spacing: 3px;
-        line-height: 100px;
+        line-height: 80px;
         display: block;
         font-weight: 600;
         transition: $transition1;
         box-shadow: 0 0 0 $blackPolar inset;
         border-top: solid 2px $lineColor;
+        z-index: 100;
         @media screen and (min-width: 1440px) {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
         @media screen and (max-width: 480px) {
             font-size: 1rem;
@@ -561,8 +562,11 @@
     //Hover Boton 1
     & .btn-a:hover {
         color: $whitePolar!important;
-        box-shadow: 0 -100px 0 $redPolar inset;
+        box-shadow: 0 -80px 0 $redPolar inset;
         z-index: 100;
+    }
+    & .btn-a:last-child:hover {
+        box-shadow: 0 -80px 0 $cyber inset;
     }
 }
 
