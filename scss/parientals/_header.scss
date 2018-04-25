@@ -45,6 +45,9 @@
             align-items: center;
             color: $whitePolar;
             transition: $transition1;
+            @media screen and (max-width:1024px) {
+                padding: 0 .7rem;
+            }
             & .icon-link {
                 margin-right: .5rem;
                 font-weight: 400;
