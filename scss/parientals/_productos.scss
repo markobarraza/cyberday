@@ -112,7 +112,7 @@
     padding: 1.5rem!important;
     transition: $transition1;
     background: $whitePolar;
-    min-height: 480px!important;
+    min-height: 485px!important;
     @media screen and (max-width: 480px) {
         min-height: auto!important;
         border: none;
@@ -454,9 +454,20 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            min-height: 40px;
             @media screen and (max-width: 480px) {
                 font-size: 17px;
                 margin-bottom: 3px;
+                justify-content: space-between;
+            }
+            & .tlp-tarjeta {
+                font-size: 10px;
+                @media screen and (max-width: 480px) {
+                    width: 80px;
+                }
+                @media screen and (max-width: 321px) {
+                    width: 65px;
+                }
             }
         }
         & .normal-price {
@@ -489,7 +500,6 @@
 .box-product-active {
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.07);
     z-index: 40;
-    transform: scale(1.02);
     border-radius: 5px;
 }
 
