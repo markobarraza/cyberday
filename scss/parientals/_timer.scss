@@ -1,254 +1,268 @@
-.timer-premios-container {
-    margin: 0;
-    margin-left: 0!important;
-    margin-right: 0!important;
-    padding: 6rem 0;        
-    @media screen and (max-width:768px) {
-        padding: 3rem 0;
-    }
-    @media screen and (max-width:480px) {
-        padding: 0 0 2rem 0;
-    }
-    & .timer-container, .premios-container {
-        position: relative;
-        border-right: 2px solid $lineColor;
-        padding: 0 2rem;
-        @media screen and (max-width:768px) {
-            margin-bottom: 2rem;
+    .timer-premios-container {
+        margin: 0;
+        margin-left: 0!important;
+        margin-right: 0!important;
+        padding: 6rem 0;
+        @media screen and (max-width: 768px) {
+            padding: 3rem 0;
         }
         @media screen and (max-width:480px) {
-            border-right: none;
-            padding: 2rem 1rem;
-            border-bottom: 2px solid $lineColor;
-            margin-bottom: 2rem;
-            .premios-container {
-                margin-bottom: 0;
-            }
-        }
-        //AGOTADO Y AVISO
-        .container-agotado, .container-aviso {
-            background: rgba(255, 255, 255, 0.6);
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            z-index: 20;
-            top: 0;
-            left: 0;
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: column;
-            align-items: center;
             padding: 0;
-            overflow: hidden;
-            @media screen and (max-width:480px) {
-            }
-            & .standar-agotado {
-                width: 110%;
-                top: 50%;
-                height: auto;
-                line-height: 50px;
-                position: absolute;
-                -webkit-transform: translateY(-50%) rotate(5deg);
-                transform: translateY(-50%) rotate(5deg);
-                letter-spacing: 5px;
-                font-weight: 600;
-                -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-                box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-                background: #ea0822;
-                color: #fff;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                z-index: 20;
-                font-size: 1rem;
-                @media screen and (max-width:480px) {
-                    width: 110%;
-                    letter-spacing: 2px;
-                }
-            }
         }
-        & .timer-producto {
-            justify-content: center;
-            align-items: center;
+        & .timer-container,
+        .premios-container {
             position: relative;
+            border-right: 2px solid $lineColor;
+            padding: 0 2rem;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 3rem;
+            }
             @media screen and (max-width:480px) {
-                align-items: flex-start;
-            }
-            @media screen and (max-width:321px) {
-                align-items: flex-start;
-                flex-wrap: wrap;
-            }
-        }
-        & .img-bomba {
-            width: 325px;
-            max-width: 325px;
-            margin-right: 1rem;
-            @media screen and (max-width:480px) {
-             max-width: 200px;
-             margin-right: 0;
-             width: 250px;
-            }
-        }
-        & .contenido-textual {
-            @media screen and (max-width:321px) {
-                width: 100%;
-                text-align: center;
-            }
-            h1,h2,h3,p {
-                margin: 0;
-                margin-bottom: .5rem;
-            }
-            .marca-bomba {
-                font-size: 9px;
-                background: #000;
-                color: #fff;
-                line-height: normal;
-                padding: 3px 5px;
-                border-radius: 3px;
-                font-weight: 600;
-                text-transform: uppercase;
-                top: -2px;
-                display: inline-block;
-                position: relative;
-                margin-bottom: 5px;
-            }
-            h1 {
-                font-size: 1.5rem;
-                font-weight: 600;
-                padding-bottom: .8rem;
-                margin-bottom: .8rem;
-                border-bottom: 1px solid $lineColor;
-                color: $redPolar;
-                @media screen and (max-width:480px) {
-                    font-size: 1rem;
-                }
-            }
-            h2.description {
-                font-size: 1rem;
-                text-transform: uppercase;
-                @media screen and (max-width:480px) {
-                    font-size: .85rem;
-                }
-            }
-            h2.description-premio {
-                line-height: normal;
+                border-right: none;
+                padding: 2rem 1rem;
+                border-bottom: 2px solid $lineColor;
                 margin-bottom: 0;
             }
-            h2.description-premio:nth-of-type(2) {
-                margin-bottom: 5px;
-            }
-            h3.price-oferta {
-                font-size: 25px;
+            //AGOTADO Y AVISO
+            .container-agotado,
+            .container-aviso {
+                background: rgba(255, 255, 255, 0.6);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                z-index: 20;
+                top: 0;
+                left: 0;
                 display: flex;
-                align-content: center;
-                font-weight: 500;
-                justify-content: flex-start;
-                @media screen and (max-width:480px) {
-                    font-size: 20px;
+                justify-content: flex-end;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+                overflow: hidden;
+                @media screen and (max-width: 480px) {}
+                & .standar-agotado {
+                    width: 110%;
+                    top: 50%;
+                    height: auto;
+                    line-height: 50px;
+                    position: absolute;
+                    -webkit-transform: translateY(-50%) rotate(5deg);
+                    transform: translateY(-50%) rotate(5deg);
+                    letter-spacing: 5px;
+                    font-weight: 600;
+                    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                    background: #ea0822;
+                    color: #fff;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    z-index: 20;
+                    font-size: 1rem;
+                    @media screen and (max-width: 480px) {
+                        width: 110%;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+            & .timer-producto {
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                @media screen and (max-width: 480px) {
+                    align-items: flex-start;
+                    flex-wrap: wrap;
                 }
                 @media screen and (max-width:321px) {
-                    justify-content: center; 
-                    font-size: 2rem;
+                    align-items: flex-start;
                 }
-                & .signo-peso {
+            }
+            & .img-bomba {
+                width: 325px;
+                max-width: 325px;
+                margin-right: 1rem;
+                @media screen and (max-width: 480px) {
+                    max-width: 210px;
+                    margin-right: 0;
+                    width: 250px;
+                }
+            }
+            & .contenido-textual {
+                @media screen and (max-width: 480px) {
+                    width: 100%;
+                    text-align: center;
+                }
+                h1,
+                h2,
+                h3,
+                p {
+                    margin: 0;
+                    margin-bottom: .5rem;
+                }
+                .marca-bomba {
+                    font-size: 9px;
+                    background: #000;
+                    color: #fff;
+                    line-height: normal;
+                    padding: 3px 5px;
+                    border-radius: 3px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    top: -2px;
+                    display: inline-block;
+                    position: relative;
+                    margin-bottom: 5px;
+                }
+                h1 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    padding-bottom: .8rem;
+                    margin-bottom: .8rem;
+                    border-bottom: 1px solid $lineColor;
+                    color: $redPolar;
+                    @media screen and (max-width: 480px) {
+                        font-size: 1rem;
+                    }
+                }
+                h2.description {
                     font-size: 1rem;
-                    padding-right: 2px;
-                    vertical-align: middle;
+                    text-transform: uppercase;
+                    @media screen and (max-width: 480px) {
+                        font-size: .85rem;
+                    }
+                }
+                h2.description-premio {
+                    line-height: normal;
+                    margin-bottom: 0;
+                    @media screen and (max-width: 480px) {
+                        padding: 0 1.5rem;
+                        line-height: 20px;
+                    }
+                }
+                h2.description-premio:nth-of-type(2) {
+                    margin-bottom: 5px;
+                }
+                h3.price-oferta {
+                    font-size: 25px;
+                    display: flex;
+                    align-content: center;
+                    font-weight: 500;
+                    justify-content: flex-start;
+                    @media screen and (max-width: 480px) {
+                        font-size: 20px;
+                        justify-content: center;
+                    }
+                    @media screen and (max-width:321px) {
+                        font-size: 2rem;
+                    }
+                    & .signo-peso {
+                        font-size: 1rem;
+                        padding-right: 2px;
+                        vertical-align: middle;
+                    }
+                }
+                p.normal-price {
+                    color: $myParrafo;
+                    font-size: .8rem;
                 }
             }
-            p.normal-price {
-                color: $myParrafo;
-                font-size: .8rem;
+        }
+        .timer-container {
+            @media screen and (max-width: 480px) {
+                padding-bottom: 3rem;
+            }
+        }
+        & .premios-container {
+            position: relative;
+            border: 0;
+            @media screen and (max-width: 480px) {
+                border-bottom: none;
+                margin-bottom: 0;
             }
         }
     }
-    & .premios-container {
-        position: relative;
-        border: 0;
-        @media screen and (max-width:480px) {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-    }
-}
-
-.btn-red {
-    color: $redPolar;
-    border: 2px solid rgba(231, 8, 34, 0.15);
-    line-height: 40px;
-    padding: 0 2rem;
-    display: inline-block;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: 600;
-    background: $whitePolar;
-    transition: $transition1;
-    letter-spacing: 1px;
-    font-size: .9rem;
-    margin: .5rem 0 1rem 0;
-    box-shadow: 0 20px 30px -15px rgba(0,0,0,0), 0 0 0 0 $redPolar inset;
-    @media screen and (max-width:480px) {
-     padding: 0 1rem;
-     width: 100%;
-    }
-}
-.btn-black {
-    color: $blackPolar;
-    border: 2px solid rgba(0, 0, 0, 0.15);
-    @extend .btn-red;
-}
-.btn-red:hover, .btn-red-active {
-    box-shadow: 0 20px 30px -15px rgba(0,0,0,.4), 0 -40px 0 0 #e70822 inset;
-    color: $whitePolar;
-    border: 2px solid rgba(231, 8, 34, 1);
-}
-.btn-black:hover, .btn-black-active {
-    box-shadow: 0 20px 30px -15px rgba(0,0,0,.4), 0 -40px 0 0 #000000 inset;
-    color: $whitePolar;
-    border: 2px solid rgb(0, 0, 0);
-
-}
-
-//TIMER
-.content-timer {
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    left: -12.5px;
-    @media screen and (max-width:480px) {
-        left: -8px;
-    }
-    @media screen and (max-width:321px) {
-        left: 0;
-    }
-    & .box-timer, & .box-valor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    
+    .btn-red {
+        color: $redPolar;
+        border: 2px solid rgba(231, 8, 34, 0.15);
+        line-height: 40px;
+        padding: 0 2rem;
+        display: inline-block;
+        text-align: center;
+        border-radius: 5px;
         font-weight: 600;
-        @media screen and (max-width:480px) {
-            padding: 0 .5rem;
-        }
-        & .valor-timer {
-            font-size: 1.3rem;
-            text-align: left;
-            @media screen and (max-width:480px) {
-             font-size: 1rem;
-            }
-            @media screen and (max-width:321px) {
-             font-size: 1.3rem;
-            }
-        }
-        & .text-timer {
-            font-size: .8rem;
-            text-align: left
+        background: $whitePolar;
+        transition: $transition1;
+        letter-spacing: 1px;
+        font-size: .9rem;
+        margin: .5rem 0 1rem 0;
+        box-shadow: 0 20px 30px -15px rgba(0, 0, 0, 0), 0 0 0 0 $redPolar inset;
+        @media screen and (max-width: 480px) {
+            padding: 0 2rem;
         }
     }
-}
+    
+    .btn-black {
+        color: $blackPolar;
+        border: 2px solid rgba(0, 0, 0, 0.15);
+        @extend .btn-red;
+    }
+    
+    .btn-red:hover,
+    .btn-red-active {
+        box-shadow: 0 20px 30px -15px rgba(0, 0, 0, .4), 0 -40px 0 0 #e70822 inset;
+        color: $whitePolar;
+        border: 2px solid rgba(231, 8, 34, 1);
+    }
+    
+    .btn-black:hover,
+    .btn-black-active {
+        box-shadow: 0 20px 30px -15px rgba(0, 0, 0, .4), 0 -40px 0 0 #000000 inset;
+        color: $whitePolar;
+        border: 2px solid rgb(0, 0, 0);
+    }
+    
+    //TIMER
+    .content-timer {
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        left: -12.5px;
+        @media screen and (max-width: 480px) {
+            left: -8px;
+        }
+        @media screen and (max-width:321px) {
+            left: 0;
+        }
+        & .box-timer,
+        & .box-valor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            @media screen and (max-width: 480px) {
+                padding: 0 .5rem;
+            }
+            & .valor-timer {
+                font-size: 1.3rem;
+                text-align: left;
+                @media screen and (max-width: 480px) {
+                    font-size: 1rem;
+                }
+                @media screen and (max-width:321px) {
+                    font-size: 1.3rem;
+                }
+            }
+            & .text-timer {
+                font-size: .8rem;
+                text-align: left
+            }
+        }
+    }
