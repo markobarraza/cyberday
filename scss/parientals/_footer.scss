@@ -20,6 +20,7 @@ footer {
     }
     &  .logo-footer img {
         max-width: 60px;
+        margin: 10px;
         @media screen and (max-width: 480px) {
                 margin-bottom: 15px;
             }
