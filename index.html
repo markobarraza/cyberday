@@ -347,7 +347,7 @@
         </nav>
     </header>
     <!-- SLIDER -->
-    <section id="home" class="scrollspy slider-swiper-cont hide">
+    <!-- <section id="" class="scrollspy slider-swiper-cont hide">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -430,16 +430,17 @@
                         <a class="waves-effect waves-light btn-red btn-red-active" href="#">VER OFERTA</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-    </section>
+    </section> -->
+
     <!-- TIMER -->
-    <section class="container main-container-category">
+    <section id="home" class="scrollspy container main-container-category">
         <div class="row timer-premios-container">
             <!-- Contenido Timer -->
             <div class="col s12 m12 l6 timer-container">
@@ -543,15 +544,18 @@
                 <div id="template-producto" class="box-product col s6 m6 l4 xl3">
                     <porcentaje class="porcentaje">
                         <span class="number-porcentaje">45%</span> dcto.</porcentaje>
+                    <div class="cyber">
+                        <span class="product-cyber">producto cyber</span>
+                    </div>
                     <a class="waves-effect waves-light link-product col s12" href="{link}">
                         <div class="image" id="image">
                             <img src="img/productos/product-1.jpg" alt="" class="lazy responsive-img product-image">
                         </div>
                         <!-- Tags Principales -->
                         <div class="tags-main valign-wrapper">
-                            <span class="tags-despacho tags">
+                            <!-- <span class="tags-despacho tags">
                                 <i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
-                            </span>
+                            </span> -->
                             <span class="hide tags-cuotas tags">
                                 <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
                                     alt="Tarjeta La Polar">
@@ -567,7 +571,8 @@
                         <!-- Tags Secundarios -->
                         <div class="tags-first valign-wrapper">
                             <span class="tags marca hide-on-small-only">{marca}</span>
-                            <span class="tags product-cyber">{producto_cyber}</span>
+                            <!-- <span class="tags product-cyber">{producto_cyber}</span> -->
+                            <span class="tags tags-despacho tooltipped" data-position="top" data-delay="50" data-tooltip="Con Tarjeta La Polar" alt="Tarjeta La Polar">Despacho Gratis</span>
                         </div>
                         <div>
                             <h1 class="description">{descripcion} </h1>
@@ -575,10 +580,12 @@
                                 <img class="{imagen-tlp} tlp-tarjeta responsive-img" src="/img/html/newsite/listado/oferta_exclusiva_LP.jpg" alt="Oferta Exclusiva TLP |FLEX|" border="0">
                             </h2>
                             <p class="normal-price">Antes: {precio_normal}</p>
-                            <!-- <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i> -->
-                            
+                            <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
+                            <!-- nuevo boton -->
+                            <!-- <div class="btn-veroferta">
+                                <span class="btn-oferta" href="{link}">Ver Oferta</span>
+                            </div> -->
                         </div>
-                        <span class="btn-oferta" href="{link}">Ver Oferta</span>
                     </a>
                 </div>
                 <!-- Products Agotado Original -->
@@ -649,7 +656,7 @@
         </section>
 
         <!-- Linea Blanca SECTION -->
-        <section id="lineablanca" class="scrollspy container main-container-category">
+        <section id="hotcyber" class="scrollspy container main-container-category">
             <!-- Title section -->
             <div class="title-section valign-wrapper">
                 <div class="hide-on-small-only icons-title center-align">

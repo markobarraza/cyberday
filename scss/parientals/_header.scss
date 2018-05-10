@@ -80,31 +80,32 @@
         }
         //BTN ACTIVADO
         & .active {
-            background: transparent;
+            background: $redPolar;
             color: $whitePolar;
             & .icon-link {
-                border-radius: 50%;
-                color: $redPolar;
-                animation: active-menu 1s 1 alternate 0s;
+                // border-radius: 50%;
+                color: $whitePolar;
+                // animation: active-menu 1s 1 alternate 0s;
             }
-            @keyframes active-menu {
-                0% {
-                    box-shadow: 0 0 0 3px rgba(234, 8, 34, .7);
-                    background: $redPolar;
-                    color: $whitePolar;
-                }
-                100% {
-                    box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
-                    background: black;
-                    color: $redPolar;
-                }
-            }
+            // @keyframes active-menu {
+            //     0% {
+            //         box-shadow: 0 0 0 3px rgba(234, 8, 34, .7);
+            //         background: $redPolar;
+            //         color: $whitePolar;
+            //     }
+            //     100% {
+            //         box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+            //         background: black;
+            //         color: $redPolar;
+            //     }
+            // }
         }
         & .link-menu-desktop:hover .icon-link, & .link-menu-desktop:hover {
             color: $whitePolar;
+            background-color: $redPolar;
         }
         & .active:hover .icon-link {
-            color: $redPolar;
+            color: $whitePolar;
         }
         
     }
