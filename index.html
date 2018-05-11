@@ -575,16 +575,15 @@
                             <span class="tags tags-despacho tooltipped" data-position="top" data-delay="50" data-tooltip="Con Tarjeta La Polar" alt="Tarjeta La Polar">Despacho Gratis</span>
                         </div>
                         <div>
-                            <h1 class="description">{descripcion} </h1>
+                            <h1 class="description">{descripcion}</h1>
                             <h2 class="price-oferta">{precio}
                                 <img class="{imagen-tlp} tlp-tarjeta responsive-img" src="/img/html/newsite/listado/oferta_exclusiva_LP.jpg" alt="Oferta Exclusiva TLP |FLEX|" border="0">
                             </h2>
                             <p class="normal-price">Antes: {precio_normal}</p>
-                            <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
+                            <!-- <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i> -->
                             <!-- nuevo boton -->
-                            <!-- <div class="btn-veroferta">
-                                <span class="btn-oferta" href="{link}">Ver Oferta</span>
-                            </div> -->
+                            <span class="waves-effect waves-light btn-oferta" href="{link}">Ver Oferta</span>
+                           
                         </div>
                     </a>
                 </div>
@@ -604,9 +603,9 @@
                     <!-- Agotado Standar -->
                     <div class="container-agotado">
                         <!-- Tags Agotado -->
-                        <span class="standar-agotado valign-wrapper">¡AGOTADO!
+                        <!-- <span class="standar-agotado valign-wrapper">¡AGOTADO!
                             <i class="hide icon-alert-circle"></i>
-                        </span>
+                        </span> -->
                     </div>
 
                     <!-- Product Oculto debajo del agotado -->
@@ -616,9 +615,9 @@
                         </div>
                         <!-- Tags Principales -->
                         <div class="tags-main valign-wrapper">
-                            <span class="tags-despacho tags">
+                            <!-- <span class="tags-despacho tags">
                                 <i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
-                            </span>
+                            </span> -->
                             <span class="hide tags-cuotas tags">
                                 <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
                                     alt="Tarjeta La Polar">
@@ -633,14 +632,16 @@
                         <!-- Tags Secundarios -->
                         <div class="tags-first valign-wrapper">
                             <span class="tags marca hide-on-small-only">{marca}</span>
-                            <span class="tags product-cyber">{producto_cyber}</span>
+                            <!-- <span class="tags product-cyber">{producto_cyber}</span> -->
+                            <span class="tags tags-despacho tooltipped" data-position="top" data-delay="50" data-tooltip="Con Tarjeta La Polar" alt="Tarjeta La Polar">Despacho Gratis</span>
                         </div>
                         <h1 class="description">{descripcion} </h1>
                         <h2 class="price-oferta">{precio}
                             <img class="{imagen-tlp} tlp-tarjeta responsive-img" src="/img/html/newsite/listado/oferta_exclusiva_LP.jpg" alt="Oferta Exclusiva TLP |FLEX|" border="0">
                         </h2>
                         <p class="normal-price">Antes: {precio_normal}</p>
-                        <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
+                        <!-- <i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i> -->
+                        <span class="waves-effect waves-light btn-oferta-agotado" href="{link}">AGOTADO</span>
                     </a>
                 </div>
                 <!-- Botones -->

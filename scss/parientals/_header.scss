@@ -199,8 +199,9 @@
             }
         }
         & .active {
-            color: $redPolar;
+            color: $whitePolar;
             animation: active-menu 1s 1 alternate 0s;
+            background-color: $redPolar;
         }
     }
     //RRSS MOBILE
