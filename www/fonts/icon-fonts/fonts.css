@@ -23,7 +23,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-twitter:before {
   content: "\e900";
 }
@@ -1263,9 +1262,9 @@
 .icon-tag_faces:before {
   content: "\e420";
 }
-.icon-link:before {
+/* .icon-link:before {
   content: "\e157";
-}
+} */
 .icon-invert_colors:before {
   content: "\e891";
 }
