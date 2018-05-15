@@ -132,6 +132,9 @@
         border-radius: 0 5px 5px 0;
         width: 112px;
         z-index: 90;
+        @media screen and (max-width: 480px){
+            width: 93px
+        }
         & .cuotas_diez {
             font-size: 1.6rem;
             float: left;
@@ -148,7 +151,21 @@
             line-height: 13px;
             padding: 5px 0 0 5px;
             @media screen and (max-width: 480px) {
-                padding: 3px 0 0 3px;
+                padding: 4px 0 0 3px;
+                line-height: 10px;
+                width: 61px;
+            }
+        }
+        & .tarjeta_img{
+            position: absolute;
+            right: -24px;
+            top: -4px;
+            width: 45px;
+            float: left;
+            @media screen and (max-width: 480px) {
+                top: -3px;
+                right: -25px;
+                width: 38px;
             }
         }
         // & .cuotas-img{
@@ -162,37 +179,26 @@
         top: 15px;
         right: 15px;
         z-index: 30;
-        width: 80px;
-        height: 40px;
         border-radius: 5px 5px 5px 5px;
         color: $whitePolar;
-        font-size: 1rem;
+        font-size: .8rem;
         text-align: left;
         text-transform: uppercase;
         display: flex;
         justify-content: left;
-        padding: 5px 0  0 5px;
+        padding: 5px 2px  0 5px;
         flex-direction: column;
         color: $whitePolar;
         font-weight: 700;
         letter-spacing: 4px;
-        @media screen and (max-width: 480px){
-            top: 93px;
-            font-size: .7rem;
-            letter-spacing: 3px;
-            width: 60px;
-            height: 25px;
-        }
+        
         // producto
         & .product-cyber{
-            font-size: .7rem;
+            font-size: .6rem;
             line-height: .8em;
             letter-spacing: 1px;
             font-weight: normal;
-            @media screen and (max-width: 480px) {
-            font-size: .5rem;
-            line-height: .6em;
-            }
+            
         }
         
     }
@@ -361,11 +367,9 @@
         text-align: left;
         font-weight: 500;
         position: relative;
-        min-height: 499px;
         //Imagen Producto
         & .image {
             position: relative;
-            margin-top: 25px;
             @media screen and (max-width: 768px) {
                 min-height: auto;
             }
@@ -449,8 +453,29 @@
                     }
                 }
             }
+            & .tags-cyber{
+                font-size: 8px;
+                background-color: $whitePolar;
+                color: $cyber;
+                border: solid 1px $cyber;
+                padding: 8px 0 0 5px;;
+                margin-right: 20px;
+                font-weight: 900;
+                text-align: left;
+            }
+            & .tag-cyber_icon{
+                position: absolute;
+                z-index: 40;
+                width: 23px;
+                height: 23px;
+                top: -7px;
+                right: -15px;
+                background-color: $cyber;
+                border-radius: 50%;
+                padding: 4px;
+            }
             & .tags:hover {
-                color: $blackPolar;
+                // color: $blackPolar;
             }
             & .tags:last-child {
                 margin-right: 0;
@@ -554,6 +579,7 @@
         & .normal-price {
             font-size: 12px;
             margin: 0;
+            margin-bottom: 10px;
             @media screen and (max-width: 480px) {
                 font-size: 10px;
             }
@@ -608,9 +634,9 @@
     text-align: center;
     color: $whitePolar;
     display: block;
-    padding: 10px 15px;
+    padding: 5px 7px;
     width: 30%;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;  
     letter-spacing: 1px;
@@ -721,7 +747,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 400px!important;
+        
     }
     @media screen and (max-width: 480px) {
         border-bottom: 1px solid $lineColor;

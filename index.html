@@ -531,11 +531,12 @@
             <div id="productos" class="container-productos row">
 
                 <!-- Caluga Descuento -->
-                <div id="template-producto" class="waves-effect waves-dark box-product box-caluga col s12 m6 l4 xl3">
+                <div id="template-producto" class="waves-effect waves-dark box-product box-caluga col s6 m6 l4 xl3">
                     <a class="link-product col s12" href="{link}">
                         <div class="image calugas-container" id="image">
-                            <img class="caluga cal-1 responsive-img" src="img/calugas/producto.gif" alt="Llamado de Descuento">
-                            <img class="caluga cal-2 responsive-img" src="img/calugas/descuento.png" alt="Llamado de Descuento">
+                            <img class="caluga cal-1 responsive-img" src="img/calugas/caluga-1.jpg" alt="Llamado de Descuento">
+                            <!-- <img class="caluga cal-1 responsive-img" src="img/calugas/producto.gif" alt="Llamado de Descuento"> -->
+                            <!-- <img class="caluga cal-2 responsive-img" src="img/calugas/descuento.png" alt="Llamado de Descuento"> -->
                         </div>
                     </a>
                 </div>
@@ -548,10 +549,11 @@
                     <div class="cuotas">
                         <span class="cuotas_diez">10</span>
                         <span class="cuotas_interes">Cuotas sin interes</span>
+                        <img class="tarjeta_img" src="img/icon-tarjeta.png" alt="tarjeta TLP">
                         <!-- <img class="cuotas-img" src="img/cuotas-listado.png" alt=""> -->
                     </div>
 
-                    <div class="cyber">
+                    <div class="hide-on-small-only cyber">
                         <span class="product-cyber">producto</span>cyber
                         <!-- <img src="img/ribbon-cyber.png" alt=""> -->
                     </div>
@@ -564,9 +566,11 @@
                             <!-- <span class="tags-despacho tags">
                                 <i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
                             </span> -->
-                            <span class="tags-cuotas tags">
-                                <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
-                                    alt="Tarjeta La Polar">
+                            <span class="show-on-small hide-on-med-and-up tags-cyber tags">
+                                <!-- <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
+                                    alt="Tarjeta La Polar"> -->
+                                    <span> PROD.<br>CYBER</span>
+                                    <img class="tag-cyber_icon btn-floating pulse" src="img/icon-cyberbag.png" alt="">
                             </span>
                             <span class="hide tags-stock tags">
                                 <i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="100 unidades"></i>
@@ -595,6 +599,9 @@
                         </div>
                     </a>
                 </div>
+
+
+                
                 <!-- Products Agotado Original -->
                 <div id="template-producto" class="box-product box-agotado col s6 m6 l4 xl3">
                     <div class="container-agotado col s12">
