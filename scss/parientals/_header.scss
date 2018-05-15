@@ -252,3 +252,32 @@
 .line-menu {
     box-shadow: 0 1px 0 #353535;
 }
+.side-nav .contenido-textual{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+.side-nav .contenido-textual h2{
+    font-size: 1rem;
+    color: $blackPolar;
+}
+.side-nav .contenido-textual h3{
+    color: $blackPolar;
+    padding: 0;
+    margin: 0;
+}
+.side-nav .contenido-textual p{
+    color: #777;
+    margin: 0;
+}
+.side-nav .contenido-textual .marca-bomba {
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.side-nav{
+    text-align: center;
+}
+.side-nav .img-bomba{
+    width: 80%;
+    padding-top: 20px;
+}

@@ -116,7 +116,7 @@
     padding: 1.5rem!important;
     transition: $transition1;
     background: $whitePolar;
-    min-height: 485px!important;
+    min-height: 492px!important;
     @media screen and (max-width: 480px) {
         // min-height: auto!important;
         border: none;
@@ -635,7 +635,7 @@
     color: $whitePolar;
     display: block;
     padding: 5px 7px;
-    width: 30%;
+    width: 31%;
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;  
@@ -756,7 +756,7 @@
         }
     }
     @media screen and (max-width:321px) {
-        min-height: 330px!important;
+        // min-height: 330px!important;
     }
     & .link-product {
         display: block;
