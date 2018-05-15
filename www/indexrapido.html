@@ -137,7 +137,6 @@
 		<a class="waves-effect waves-light link-product col s12 {caluga_template}" href="{caluga_link}">
 			<div class="image calugas-container {oculta-caluga}" id="image">
 				<img class="caluga cal-1 responsive-img" {img_caluga} alt="Llamado de Descuento">
-				<img class="caluga cal-2 responsive-img" {desc_caluga} alt="Llamado de Descuento">
 			</div>
 		</a>
 		<div class="container-agotado col s12 {agotado_template}">
@@ -158,10 +157,13 @@
 				<i class="hide icon-alert-circle"></i>
 			</span>
 		</div>-->
-		<porcentaje class="porcentaje {producto_template} {oculta_descuento}">
-			<span class="number-porcentaje">{porcentaje}%</span> dcto.</porcentaje>
-			<div class="cyber {producto_cyber}">
-				<span class="product-cyber">producto cyber</span>
+			<porcentaje class="porcentaje {producto_template} {oculta_descuento}">
+				<span class="number-porcentaje">{porcentaje}%</span> dcto.
+			</porcentaje>
+			<div class="cuotas {diezcsi}">
+				<span class="cuotas_diez">10</span>
+				<span class="cuotas_interes">Cuotas sin interes</span>
+				<img class="tarjeta_img" src="img/icon-tarjeta.png" alt="tarjeta TLP">
 			</div>
 			<a class="waves-effect waves-light link-product col s12 {producto_template}" href="{link}">
 			<div class="image" id="image">
@@ -172,9 +174,11 @@
 				<!--<span class="tags-despacho tags {oculta_despacho_gratis}">
 					<i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
 				</span>-->
-				<span class="tags-cuotas tags {diezcsi}">
-					<img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
-					 alt="Tarjeta La Polar">
+				<span class="show-on-small tags-cyber tags {producto_cyber}">
+					<!-- <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
+						alt="Tarjeta La Polar"> -->
+						<span> PROD.<br>CYBER</span>
+						<img class="tag-cyber_icon btn-floating pulse" src="img/icon-cyberbag.png" alt="">
 				</span>
 				<span class="{tag-stock}">
 					<i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="{stock} {stock_texto_unidades} {stock_texto}"></i>
