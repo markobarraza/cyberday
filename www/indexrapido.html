@@ -152,23 +152,26 @@
 			</div>
 		</div>
 		<!-- Agotado Standar -->
-		<div class="container-agotado {agotado_template}">
-			<!-- Tags Agotado -->
-			<span class="standar-agotado valign-wrapper">¡AGOTADO!
+		<!--<div class="container-agotado {agotado_template}">
+			Tags Agotado -->
+			<!--<span class="standar-agotado valign-wrapper">¡AGOTADO!
 				<i class="hide icon-alert-circle"></i>
 			</span>
-		</div>
+		</div>-->
 		<porcentaje class="porcentaje {producto_template} {oculta_descuento}">
 			<span class="number-porcentaje">{porcentaje}%</span> dcto.</porcentaje>
-		<a class="waves-effect waves-light link-product col s12 {producto_template}" href="{link}">
+			<div class="cyber {producto_cyber}">
+				<span class="product-cyber">producto cyber</span>
+			</div>
+			<a class="waves-effect waves-light link-product col s12 {producto_template}" href="{link}">
 			<div class="image" id="image">
 				<img data-original="/img/store/lista180/{imagen}" src="https://tienda.lapolar.cl/images/load.gif" alt="" class="lazy responsive-img product-image">
 			</div>
 			<!-- Tags Principales -->
 			<div class="tags-main valign-wrapper">
-				<span class="tags-despacho tags {oculta_despacho_gratis}">
+				<!--<span class="tags-despacho tags {oculta_despacho_gratis}">
 					<i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
-				</span>
+				</span>-->
 				<span class="tags-cuotas tags {diezcsi}">
 					<img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
 					 alt="Tarjeta La Polar">
@@ -181,17 +184,21 @@
 			<!-- Tags Secundarios -->
 			<div class="tags-first valign-wrapper">
 				<span class="tags marca hide-on-small-only {oculta_marca}">{marca}</span>
-				<span class="tags product-cyber {producto_cyber}">PRODUCTO CYBER</span>
+				<span class="tags tags-despacho tooltipped" data-position="top" data-delay="50" data-tooltip="Con Tarjeta La Polar" alt="Tarjeta La Polar">Despacho Gratis</span>
 			</div>
-			<h1 class="description">{descripcion}</h1>
-			<h2 class="price-oferta">{precio}
-				<img class="{imagen-tlp} tlp-tarjeta responsive-img" src="/img/html/newsite/listado/oferta_exclusiva_LP.jpg" alt="Oferta Exclusiva TLP |FLEX|"
-				 border="0">
-			</h2>
-			<p class="normal-price {oculta-precio-normal}">Antes: {precio_normal}</p>
-			<i class="icon-plus icon-plus-product tooltipped" data-position="top" data-delay="50" data-tooltip="Ver Oferta"></i>
+			<div>
+				<h1 class="description">{descripcion}</h1>
+				<h2 class="price-oferta">{precio}
+					<img class="{imagen-tlp} tlp-tarjeta responsive-img" src="/img/html/newsite/listado/oferta_exclusiva_LP.jpg" alt="Oferta Exclusiva TLP |FLEX|"
+					border="0">
+				</h2>
+				<p class="normal-price {oculta-precio-normal}">Antes: {precio_normal}</p>
+				<span class="waves-effect waves-light btn-oferta-agotado {agotado_template}" href="{link}">AGOTADO</span>
+			</div>
+			<span class="btn-oferta" href="{link}">Ver Oferta</span>
 		</a>
 	</div>
+
 	<!--BOTONES SHARE RRSS-->
 	<div class="hide-on-small-only fixed-action-btn vertical click-to-toggle">
 		<a class="black btn-floating btn-large light-red waves-effect waves-light">
@@ -241,7 +248,7 @@
 					</li>
 					<li>
 						<a href="https://www.lapolar.cl/especial/cyberday">
-							<i class="icon-home2 icon-toggle-menu"></i>Inicio</a>
+							<i class="icon-alarm icon-toggle-menu"></i>Inicio</a>
 					</li>
 					<li>
 						<a href="https://www.lapolar.cl/especial/cyberday-tecnologia">
@@ -252,12 +259,16 @@
 							<i class="icon-speaker2 icon-toggle-menu"></i>Todo Línea Blanca</a>
 					</li>
 					<li>
+						<a href="https://www.lapolar.cl/especial/cyberday-dormitorio">
+							<i class="icon-inbox2 icon-toggle-menu"></i>Todo Dormitorio</a>
+					</li>
+					<li>
 						<a href="https://www.lapolar.cl/especial/cyberday-hogar">
 							<i class="icon-inbox2 icon-toggle-menu"></i>Todo Hogar</a>
 					</li>
 					<li>
 						<a href="https://www.lapolar.cl/especial/cyberday-deportes">
-							<i class="icon-inbox2 icon-toggle-menu"></i>Todo Deportes</a>
+							<i class="icon-bicycle icon-toggle-menu"></i>Todo Deportes</a>
 					</li>
 					<li>
 						<a href="https://www.lapolar.cl/especial/cyberday-ninos">
@@ -311,12 +322,21 @@
 							<i class="icon-link icon-home2"></i>Inicio</a>
 					</li>
 					<li>
+						<a class="link-menu-desktop" href="#hotcyber">
+							<i class="icon-link icon-whatshot"></i>Hot
+						</a>
+					</li>
+					<li>
 						<a class="link-menu-desktop" href="#tecnologia">
-							<i class="icon-link icon-wifi2"></i>Tecnología</a>
+							<i class="icon-link icon-dialpad"></i>Tecnología</a>
 					</li>
 					<li>
 						<a class="link-menu-desktop" href="#lineablanca">
 							<i class="icon-link icon-speaker2"></i>Linea Blanca</a>
+					</li>
+					<li>
+						<a class="link-menu-desktop" href="#dormitorio">
+							<i class="icon-link icon-home2"></i>Dormitorio</a>
 					</li>
 					<li>
 						<a class="link-menu-desktop" href="#hogar">
@@ -324,7 +344,7 @@
 					</li>
 					<li>
 						<a class="link-menu-desktop" href="#deportes">
-							<i class="icon-link icon-headphones"></i>Deportes</a>
+							<i class="icon-link icon-bicycle"></i>Deportes</a>
 					</li>
 					<li>
 						<a class="link-menu-desktop" href="#ninos">
@@ -402,7 +422,7 @@
 		</nav>
 	</header>
 	<!-- SLIDER -->
-	<section id="home" class="scrollspy slider-swiper-cont">
+	<!--<section id="home" class="scrollspy slider-swiper-cont hide">
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
@@ -487,14 +507,14 @@
 				</div>
 			</div>
 			<!-- Add Pagination -->
-			<div class="swiper-pagination"></div>
+			<!--<div class="swiper-pagination"></div>-->
 			<!-- If we need navigation buttons -->
-			<div class="swiper-button-prev"></div>
+			<!--<div class="swiper-button-prev"></div>
 			<div class="swiper-button-next"></div>
 		</div>
-	</section>
+	</section>-->
 	<!-- TIMER -->
-	<section class="container main-container-category">
+	<section id="home" class="scrollspy container main-container-category">
 		<div class="row timer-premios-container">
 			<!-- Contenido Timer -->
 			<div class="col s12 m12 l6 timer-container">
@@ -562,6 +582,25 @@
 
 
 	<main>
+		<section id="hotcyber" class="scrollspy container main-container-category">
+			<!-- Title section -->
+			<div class="title-section valign-wrapper">
+				<div class="hide-on-small-only icons-title center-align">
+					<i class="iconos cyber-text icon-smartphone"></i>
+					<i class="iconos black-text icon-tv2"></i>
+					<i class="iconos red-polar-text icon-monitor"></i>
+				</div>
+				<h1 class="center-align">Hot</h1>
+				<div class="hide-on-small-only icons-title center-align">
+					<i class="iconos red-polar-text icon-printer"></i>
+					<i class="iconos black-text icon-camera2"></i>
+					<i class="iconos cyber-text icon-headphones"></i>
+				</div>
+			</div>
+
+			<!-- Container Dinamic Products -->
+			<div id="container_hotcyber" class="container-productos row"></div>
+		</section>
 		<!-- TECNOLOGIA SECTION -->
 		<section id="tecnologia" class="scrollspy container main-container-category">
 			<!-- Title section -->
@@ -582,7 +621,6 @@
 			<!-- Container Dinamic Products -->
 			<div id="container_tecnologia" class="container-productos row"></div>
 		</section>
-		<!-- TECNOLOGIA SECTION -->
 		<section id="lineablanca" class="scrollspy container main-container-category">
 			<!-- Title section -->
 			<div class="title-section valign-wrapper">
@@ -591,7 +629,7 @@
 					<i class="iconos black-text icon-tv2"></i>
 					<i class="iconos red-polar-text icon-monitor"></i>
 				</div>
-				<h1 class="center-align">LÍNEA BLANCA</h1>
+				<h1 class="center-align">Línea Blanca</h1>
 				<div class="hide-on-small-only icons-title center-align">
 					<i class="iconos red-polar-text icon-printer"></i>
 					<i class="iconos black-text icon-camera2"></i>
@@ -601,6 +639,25 @@
 
 			<!-- Container Dinamic Products -->
 			<div id="container_lineablanca" class="container-productos row"></div>
+		</section>
+		<section id="dormitorio" class="scrollspy container main-container-category">
+			<!-- Title section -->
+			<div class="title-section valign-wrapper">
+				<div class="hide-on-small-only icons-title center-align">
+					<i class="iconos cyber-text icon-smartphone"></i>
+					<i class="iconos black-text icon-tv2"></i>
+					<i class="iconos red-polar-text icon-monitor"></i>
+				</div>
+				<h1 class="center-align">Dormitorio</h1>
+				<div class="hide-on-small-only icons-title center-align">
+					<i class="iconos red-polar-text icon-printer"></i>
+					<i class="iconos black-text icon-camera2"></i>
+					<i class="iconos cyber-text icon-headphones"></i>
+				</div>
+			</div>
+
+			<!-- Container Dinamic Products -->
+			<div id="container_dormitorio" class="container-productos row"></div>
 		</section>
 		<section id="hogar" class="scrollspy container main-container-category">
 			<!-- Title section -->
@@ -680,6 +737,7 @@
 		<div class="container row cont-footer">
 			<div class="logo-footer col s12 l3 center-block">
 				<img class="responsive-img" src="img/logo-cyber.png">
+				<img class="responsive-img" src="img/logo-confianza.png">
 			</div>
 			<div class="links-footer col s12 l3 center-block">
 				<a href="http://www.lapolar.cl/img/bases/BasesLegalesPremiosCybermondayNoviembre2017.pdf" target="_blank">• Bases Legales</a>
