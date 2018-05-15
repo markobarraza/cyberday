@@ -122,34 +122,86 @@
         border: none;
         padding: 1rem!important;
     }
+    // 10 cuotas sin interes (MB)
+    & .cuotas{
+        position: absolute;
+        background: $redPolar;
+        top: 10px;
+        left: 0;
+        color: $whitePolar;
+        border-radius: 0 5px 5px 0;
+        width: 112px;
+        z-index: 90;
+        & .cuotas_diez {
+            font-size: 1.6rem;
+            float: left;
+            padding: 0 0 0 5px;
+            @media screen and (max-width: 480px){
+                font-size: 1.4rem;
+            }
+        }
+        & .cuotas_interes {
+            float: left;
+            font-size: .8rem;
+            width: 80px;
+            line-height: 0;
+            line-height: 13px;
+            padding: 5px 0 0 5px;
+            @media screen and (max-width: 480px) {
+                padding: 3px 0 0 3px;
+            }
+        }
+        // & .cuotas-img{
+        //     width: 100%;
+        // }
+    }
     // Etiqueta Cyber (MB)
     & .cyber{
         position: absolute;
         background: $cyber;
-        top: 80px;
-        left: 0;
+        top: 15px;
+        right: 15px;
         z-index: 30;
         width: 80px;
         height: 40px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 5px 5px 5px 5px;
         color: $whitePolar;
-        font-size: .8rem;
-        text-align: center;
+        font-size: 1rem;
+        text-align: left;
         text-transform: uppercase;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: left;
+        padding: 5px 0  0 5px;
         flex-direction: column;
-        & .product-cyber{
-            line-height: 1.2em;
+        color: $whitePolar;
+        font-weight: 700;
+        letter-spacing: 4px;
+        @media screen and (max-width: 480px){
+            top: 93px;
+            font-size: .7rem;
+            letter-spacing: 3px;
+            width: 60px;
+            height: 25px;
         }
+        // producto
+        & .product-cyber{
+            font-size: .7rem;
+            line-height: .8em;
+            letter-spacing: 1px;
+            font-weight: normal;
+            @media screen and (max-width: 480px) {
+            font-size: .5rem;
+            line-height: .6em;
+            }
+        }
+        
     }
     //Tags Procentaje
     & .porcentaje {
         position: absolute;
         background: $redPolar;
         left: 0px;
-        top: 15px;
+        top: 50px;
         width: 55px;
         height: 55px;
         color: white;
@@ -167,6 +219,7 @@
         @media screen and (max-width: 480px) {
             width: 40px;
             height: 40px;
+            top: 48px;
             font-size: .7rem;
             line-height: normal;
             left: 0;
@@ -312,7 +365,7 @@
         //Imagen Producto
         & .image {
             position: relative;
-            height: 260px;
+            margin-top: 25px;
             @media screen and (max-width: 768px) {
                 min-height: auto;
             }
@@ -531,11 +584,10 @@
     text-align: center;
     color: $whitePolar;
     display: block;
-    padding: 10px 15px;
-    font-size: 14px;
+    padding: 5px 7px;
+    font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px;
     background-color: $redPolar;
     border-radius: 5px;
     @media screen and (max-width: 768px) {
@@ -669,6 +721,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 400px!important;
     }
     @media screen and (max-width: 480px) {
         border-bottom: 1px solid $lineColor;
