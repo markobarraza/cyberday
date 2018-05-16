@@ -116,12 +116,12 @@
     padding: 1.5rem!important;
     transition: $transition1;
     background: $whitePolar;
-    min-height: 492px!important;
-    @media screen and (max-width: 480px) {
-        // min-height: auto!important;
-        border: none;
-        padding: 1rem!important;
-    }
+    min-height: 492px !important;
+    // @media screen and (max-width: 480px) {
+    //     border: none;
+    //     padding: 1rem!important;
+    // }
+    
     // 10 cuotas sin interes (MB)
     & .cuotas{
         position: absolute;
@@ -747,7 +747,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
     @media screen and (max-width: 480px) {
         border-bottom: 1px solid $lineColor;

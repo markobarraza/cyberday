@@ -91,7 +91,6 @@
 			a.src = g;
 			m.parentNode.insertBefore(a, m)
 		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
 		ga('create', 'UA-9375823-1', 'auto');
 		ga('require', 'displayfeatures');
 		ga('send', 'pageview');
@@ -122,9 +121,12 @@
 			</div>
 		</div>
 	</div>
+	<!-- COMIENZO INPUT DE CONFIGURACION PARA LANDING -->
 	<input type="hidden" id="listag" value="prueba_desarrollo_20180416">
 	<input type="hidden" id="nivel1" value="16">
 	<input type="hidden" id="bombazo" value="17:05:00">
+	<!-- FIN INPUT DE CONFIGURACION PARA LANDING -->
+	<!-- COMIENZO PLANTILLA BOTONES VER MAS Y VER TODO -->
 	<div id="{etiqueta_categoria}" linktodo="{linktodo}" class="hide boton-categoria cont-btns col s12">
 		<a id="botonvermas" class="btn-a center-align center-block cyber-bg white-text waves-effect waves-dark">VER MÁS
 			<i class="icon-plus"></i>
@@ -133,7 +135,10 @@
 			<i class="icon-plus"></i>
 		</a>
 	</div>
-	<div id="template-producto" class="box-product {clase_caluga} col {cambia_s} m6 l4 xl3 hide {producto_visible}">
+	<!-- FIN PLANTILLA BOTONES VER MAS Y VER TODO -->
+	<!-- COMIENZO PLANTILLA PRODUCTO -->
+	<div id="template-producto" class="waves-effect waves-dark box-product {clase_caluga} col {cambia_s} s6 m6 l4 xl3 hide {producto_visible}">
+		 <!-- Caluga Descuento -->
 		<a class="waves-effect waves-light link-product col s12 {caluga_template}" href="{caluga_link}">
 			<div class="image calugas-container {oculta-caluga}" id="image">
 				<img class="caluga cal-1 responsive-img" {img_caluga} alt="Llamado de Descuento">
@@ -160,49 +165,48 @@
 			<porcentaje class="porcentaje {producto_template} {oculta_descuento}">
 				<span class="number-porcentaje">{porcentaje}%</span> dcto.
 			</porcentaje>
+			<!--DIEZ CUOTAS SIN INTERES-->
 			<div class="cuotas {diezcsi}">
 				<span class="cuotas_diez">10</span>
 				<span class="cuotas_interes">Cuotas sin interes</span>
 				<img class="tarjeta_img" src="img/icon-tarjeta.png" alt="tarjeta TLP">
 			</div>
+			<div class="hide-on-small-only cyber {producto_cyber}">
+				<span class="product-cyber">producto</span>cyber
+			</div>
 			<a class="waves-effect waves-light link-product col s12 {producto_template}" href="{link}">
-			<div class="image" id="image">
-				<img data-original="/img/store/lista180/{imagen}" src="https://tienda.lapolar.cl/images/load.gif" alt="" class="lazy responsive-img product-image">
-			</div>
-			<!-- Tags Principales -->
-			<div class="tags-main valign-wrapper">
-				<!--<span class="tags-despacho tags {oculta_despacho_gratis}">
-					<i class="tooltipped icon-truck" data-position="top" data-delay="50" data-tooltip="Despacho Gratis"></i>
-				</span>-->
-				<span class="show-on-small tags-cyber tags {producto_cyber}">
-					<!-- <img src="img/icon-tarjeta.png" class="tooltipped tarjeta" data-position="top" data-delay="50" data-tooltip="10 cuotas sin interes"
-						alt="Tarjeta La Polar"> -->
-						<span> PROD.<br>CYBER</span>
-						<img class="tag-cyber_icon btn-floating pulse" src="img/icon-cyberbag.png" alt="">
-				</span>
-				<span class="{tag-stock}">
-					<i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="{stock} {stock_texto_unidades} {stock_texto}"></i>
-				</span>
-			</div>
+				<div class="image" id="image">
+					<img data-original="/img/store/lista180/{imagen}" src="https://tienda.lapolar.cl/images/load.gif" alt="" class="lazy responsive-img product-image">
+				</div>
+				<!-- Tags Principales -->
+				<div class="tags-main valign-wrapper">
+					<span class="show-on-small hide-on-med-and-up tags-cyber tags {producto_cyber}">
+							<span> PROD.<br>CYBER</span>
+							<img class="tag-cyber_icon btn-floating pulse" src="img/icon-cyberbag.png" alt="">
+					</span>
+					<span class="{tag-stock}">
+						<i class="tooltipped icon-tag" data-position="top" data-delay="50" data-tooltip="{stock} {stock_texto_unidades} {stock_texto}"></i>
+					</span>
+				</div>
 
-			<!-- Tags Secundarios -->
-			<div class="tags-first valign-wrapper">
-				<span class="tags marca hide-on-small-only {oculta_marca}">{marca}</span>
-				<span class="tags tags-despacho tooltipped" data-position="top" data-delay="50" data-tooltip="Con Tarjeta La Polar" alt="Tarjeta La Polar">Despacho Gratis</span>
-			</div>
-			<div>
-				<h1 class="description">{descripcion}</h1>
-				<h2 class="price-oferta">{precio}
-					<img class="{imagen-tlp} tlp-tarjeta responsive-img" src="/img/html/newsite/listado/oferta_exclusiva_LP.jpg" alt="Oferta Exclusiva TLP |FLEX|"
-					border="0">
-				</h2>
-				<p class="normal-price {oculta-precio-normal}">Antes: {precio_normal}</p>
-				<span class="waves-effect waves-light btn-oferta-agotado {agotado_template}" href="{link}">AGOTADO</span>
-			</div>
-			<span class="btn-oferta" href="{link}">Ver Oferta</span>
-		</a>
+				<!-- Tags Secundarios -->
+				<div class="tags-first valign-wrapper">
+					<span class="tags marca hide-on-small-only {oculta_marca}">{marca}</span>
+					<span class="tags tags-despacho tooltipped" data-position="top" data-delay="50" data-tooltip="Con Tarjeta La Polar" alt="Tarjeta La Polar">Despacho Gratis</span>
+				</div>
+				<div>
+					<h1 class="description">{descripcion}</h1>
+					<h2 class="price-oferta">{precio}
+						<img class="{imagen-tlp} tlp-tarjeta responsive-img" src="/img/html/newsite/listado/oferta_exclusiva_LP.jpg" alt="Oferta Exclusiva TLP |FLEX|"
+						border="0">
+					</h2>
+					<p class="normal-price {oculta-precio-normal}">Antes: {precio_normal}</p>
+					<span class="waves-effect waves-light btn-oferta-agotado {agotado_template}" href="{link}">AGOTADO</span>
+				</div>
+				<span class="btn-oferta {ocultar-ver-oferta}" href="{link}">Ver Oferta</span>
+			</a>
 	</div>
-
+	<!-- FIN PLANTILLA PRODUCTO -->
 	<!--BOTONES SHARE RRSS-->
 	<div class="hide-on-small-only fixed-action-btn vertical click-to-toggle">
 		<a class="black btn-floating btn-large light-red waves-effect waves-light">
@@ -306,14 +310,24 @@
 					<i class="icon-bell"></i>
 				</a>
 				<ul class="side-nav" id="mobile-premios">
+					<img src="img/premios/premio-1.png" class="responsive-img img-bomba">
 					<li>
-						<a href="#!">Sass</a>
-					</li>
-					<li>
-						<a href="#!">Components</a>
-					</li>
-					<li>
-						<a href="#!">JavaScript</a>
+						<!-- Contenido Premios -->
+						<div class="col s12 m12 l6 premios-container">
+							<div class="valign-wrapper timer-producto">
+								<!-- Producto Timer -->
+								
+								<div class="contenido-textual">
+									<span class="marca-bomba red-polar-bg">LA POLAR TE PREMIA</span>
+									<h2 class="description description-premio">TODAS TUS COMPRAS EN CYBERDAY LA POLAR PARTICIPAN POR UNO DE LOS 3 PREMIOS DE <span class="red-polar-text bolder">US$ 3.000 c/u</span> EN:</h2>
+									<h2 class="description description-premio"></h2>
+									<h3 class="price-oferta">
+										<span class="signo-peso">$</span>220.000</h3>
+									<p class="normal-price">Antes: $330.000</p>
+									<a class="waves-effect waves-light btn-red" href="#!">VER BASES</a>
+								</div>
+							</div>
+						</div>
 					</li>
 				</ul>
 				<!-- Menu Main Desktop -->
@@ -564,7 +578,7 @@
 				</div>
 			</div>
 			<!-- Contenido Premios -->
-			<div class="col s12 m12 l6 premios-container">
+			<div class="col s12 m12 l6 premios-container hide-on-small-only">
 				<div class="valign-wrapper timer-producto">
 					<!-- Producto Timer -->
 					<a href="#!" class="">
