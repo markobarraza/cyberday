@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('icomoon.eot?d8n984');
-  src:  url('icomoon.eot?d8n984#iefix') format('embedded-opentype'),
-    url('icomoon.ttf?d8n984') format('truetype'),
-    url('icomoon.woff?d8n984') format('woff'),
-    url('icomoon.svg?d8n984#icomoon') format('svg');
+  src:  url('icomoon.eot?ibbr1e');
+  src:  url('icomoon.eot?ibbr1e#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?ibbr1e') format('truetype'),
+    url('icomoon.woff?ibbr1e') format('woff'),
+    url('icomoon.svg?ibbr1e#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,8 +24,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bicycle:before {
-  content: "\ea36";
+.icon-bed:before {
+  content: "\ea37";
 }
 .icon-3d_rotation:before {
   content: "\e84d";
@@ -3359,6 +3359,9 @@
 }
 .icon-zoom-out:before {
   content: "\ea35";
+}
+.icon-bicycle:before {
+  content: "\ea36";
 }
 .icon-twitter:before {
   content: "\e900";

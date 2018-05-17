@@ -2,7 +2,7 @@
         margin: 0;
         margin-left: 0!important;
         margin-right: 0!important;
-        padding: 6rem 0;
+        padding: 2rem 0;
         @media screen and (max-width: 768px) {
             padding: 3rem 0;
         }
@@ -86,6 +86,17 @@
             & .img-bomba {
                 width: 325px;
                 max-width: 325px;
+                margin-right: 8rem;
+                display: inl;
+                @media screen and (max-width: 480px) {
+                    max-width: 210px;
+                    margin-right: 0;
+                    width: 250px;
+                }
+            }
+            & .img-premio {
+                width: 225px;
+                max-width: 225px;
                 margin-right: 1rem;
                 @media screen and (max-width: 480px) {
                     max-width: 210px;
@@ -104,6 +115,14 @@
                 p {
                     margin: 0;
                     margin-bottom: .5rem;
+                }
+                .icon-share-2{
+                    font-size: 1.4rem;
+                    color: $whitePolar;
+                    background-color: $cyber;
+                    padding: 6px 6px;
+                    border-radius: 20px;
+                    margin-left: 10px;
                 }
                 .marca-bomba {
                     font-size: 9px;
@@ -182,6 +201,8 @@
         & .premios-container {
             position: relative;
             border: 0;
+            text-align: center;
+            padding: 3rem 0;
             @media screen and (max-width: 480px) {
                 border-bottom: none;
                 margin-bottom: 0;
