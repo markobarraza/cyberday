@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('icomoon.eot?ibbr1e');
-  src:  url('icomoon.eot?ibbr1e#iefix') format('embedded-opentype'),
-    url('icomoon.ttf?ibbr1e') format('truetype'),
-    url('icomoon.woff?ibbr1e') format('woff'),
-    url('icomoon.svg?ibbr1e#icomoon') format('svg');
+  src:  url('icomoon.eot?bacyyi');
+  src:  url('icomoon.eot?bacyyi#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?bacyyi') format('truetype'),
+    url('icomoon.woff?bacyyi') format('woff'),
+    url('comoon.svg?bacyyi#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,12 @@
 
 .icon-bed:before {
   content: "\ea37";
+}
+.icon-kid:before {
+  content: "\ea38";
+}
+.icon-taco:before {
+  content: "\ea39";
 }
 .icon-3d_rotation:before {
   content: "\e84d";
@@ -3360,9 +3366,6 @@
 .icon-zoom-out:before {
   content: "\ea35";
 }
-.icon-bicycle:before {
-  content: "\ea36";
-}
 .icon-twitter:before {
   content: "\e900";
 }
@@ -3383,4 +3386,7 @@
 }
 .icon-social2:before {
   content: "\e901";
+}
+.icon-bicycle:before {
+  content: "\ea36";
 }

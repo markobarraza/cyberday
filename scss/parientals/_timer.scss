@@ -87,7 +87,7 @@
                 width: 325px;
                 max-width: 325px;
                 margin-right: 8rem;
-                display: inl;
+                
                 @media screen and (max-width: 480px) {
                     max-width: 210px;
                     margin-right: 0;
@@ -95,13 +95,19 @@
                 }
             }
             & .img-premio {
-                width: 225px;
-                max-width: 225px;
-                margin-right: 1rem;
+                // width: 225px;
+                // max-width: 225px;
+                // margin-right: 1rem;
+                padding: 1rem;
                 @media screen and (max-width: 480px) {
-                    max-width: 210px;
                     margin-right: 0;
                     width: 250px;
+                    max-width: 210px;
+                }
+                @media screen and (max-width: 480px) {
+                    margin-right: 0;
+                    width: 250px;
+                    max-width: 210px;
                 }
             }
             & .contenido-textual {

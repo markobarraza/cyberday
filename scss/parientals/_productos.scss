@@ -50,7 +50,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 300px;
+    min-height: 150px;
     background: $blackPolar;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,11 +116,12 @@
     padding: 1.5rem!important;
     transition: $transition1;
     background: $whitePolar;
-    min-height: 492px !important;
-    // @media screen and (max-width: 480px) {
-    //     border: none;
-    //     padding: 1rem!important;
-    // }
+    min-height: 445px !important;
+    @media screen and (max-width: 480px) {
+        border: none;
+        padding: 1rem!important;
+        min-height: 451px !important;
+    }
     
     // 10 cuotas sin interes (MB)
     & .cuotas{
@@ -205,7 +206,7 @@
     //Tags Procentaje
     & .porcentaje {
         position: absolute;
-        background: $redPolar;
+        background: $blackPolar;
         left: 0px;
         top: 50px;
         width: 55px;
@@ -399,12 +400,14 @@
             width: 100%;
             display: flex;
             margin: 0;
-            min-height: 35px;
-            margin-top: 2.5rem;
+            min-height: 15px;
+            margin-top: 1rem;
             border-radius: 5px;
             border-top: 1px solid $lineColor;
             @media screen and (max-width: 480px) {
                 //display: none;
+                min-height: 25px;
+                height: 0;
             }
             & .tags {
                 position: relative;
@@ -458,10 +461,10 @@
                 background-color: $whitePolar;
                 color: $cyber;
                 border: solid 1px $cyber;
-                padding: 8px 0 0 5px;;
-                margin-right: 20px;
+                padding: 8px 0 0 5px;
                 font-weight: 900;
                 text-align: left;
+                margin: 15px 0 10px 0;
             }
             & .tag-cyber_icon{
                 position: absolute;
@@ -531,10 +534,18 @@
                 border: 1px solid $blackPolar;
             }
             & .tags-despacho {
-                border: 1px solid $redPolar;
-                background: $redPolar;
+                border: 1px solid $blackPolar;
+                background: $blackPolar;
                 @media screen and (max-width: 480px) {
                     font-size: 7px;
+                }
+            }
+            & .tags-stock {
+                border: 1px solid $blackPolar;
+                background: $blackPolar;
+                @media screen and (max-width: 480px) {
+                    font-size: 7px;
+                    margin: 2px 0 0 0;
                 }
             }
         }
@@ -605,7 +616,7 @@
 .btn-oferta {
     position: absolute;
     display: inline-block;
-    bottom: 0;
+    bottom: 10px;
     right: 0;
     text-align: center;
     color: $whitePolar;
@@ -629,7 +640,7 @@
 .btn-oferta-agotado {
     position: absolute;
     display: inline-block;
-    bottom: 0;
+    bottom: 10px;
     right: 0;
     text-align: center;
     color: $whitePolar;
