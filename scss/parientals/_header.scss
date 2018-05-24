@@ -267,7 +267,24 @@
 .side-nav .btn-red{
     margin: 0 auto;
 }
+
 // .side-nav .img-premio{
 //     padding: 2rem;
 //     width: 130px;
 // }
+.sitio_tarjeta{
+    bottom: 90px;
+}
+.sitio_tarjeta_color{
+    background-color: $redPolar;
+}
+.sitio_tarjeta .btn-floating:hover,
+.sitio_tarjeta .btn-floating:focus,
+.sitio_tarjeta .btn-floating:active{
+    background-color: $redPolar;
+}
+
+.img_tarjeta{
+    width: 35px;
+    top: 9px;
+}

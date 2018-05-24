@@ -133,24 +133,27 @@
         border-radius: 0 5px 5px 0;
         width: 112px;
         z-index: 90;
+        padding: 3px 0;
         @media screen and (max-width: 480px){
             width: 93px
         }
-        & .cuotas_diez {
-            font-size: 1.6rem;
+        & .cuotas_seis {
             float: left;
+            font-size: .95rem;
+            line-height: 13px;
             padding: 0 0 0 5px;
-            @media screen and (max-width: 480px){
-                font-size: 1.4rem;
+            font-weight: bold;
+            @media screen and (max-width: 480px) {
+                padding: 0 0 0 3px;
+                line-height: 10px;
+                font-size: .9rem;
             }
         }
-        & .cuotas_interes {
+        & .interes {
             float: left;
             font-size: .8rem;
-            width: 80px;
-            line-height: 0;
             line-height: 13px;
-            padding: 5px 0 0 5px;
+            padding: 0 0 0 5px;
             @media screen and (max-width: 480px) {
                 padding: 4px 0 0 3px;
                 line-height: 10px;
@@ -159,13 +162,13 @@
         }
         & .tarjeta_img{
             position: absolute;
-            right: -24px;
+            right: -31px;
             top: -4px;
             width: 45px;
             float: left;
             @media screen and (max-width: 480px) {
                 top: -3px;
-                right: -25px;
+                right: -31px;
                 width: 38px;
             }
         }
@@ -564,6 +567,7 @@
             }
         }
         & .price-oferta {
+            color: $redPolar;
             font-size: 25px;
             margin: 0;
             font-weight: 500;
@@ -697,12 +701,14 @@
     padding: 0!important;
     flex-wrap: wrap;
     border: none;
+    margin: 15px 0;
     @media screen and (max-width: 480px) {
         border-left: none;
         border-right: none;
+        margin: 0;
     }
     & .btn-a {
-        width: 100%;
+        width: 40%;
         font-size: 1.1rem;
         letter-spacing: 3px;
         line-height: 80px;
@@ -710,8 +716,8 @@
         font-weight: 600;
         transition: $transition1;
         box-shadow: 0 0 0 $blackPolar inset;
-        border-top: solid 2px $lineColor;
         z-index: 100;
+        border-radius: 10px;
         @media screen and (min-width: 1440px) {
             font-size: 1.2rem;
         }
@@ -722,6 +728,8 @@
             padding: 1.5rem 0;
             border-top: 1px solid $lineColor;
             text-align: center;
+            width: 100%;
+            border-radius: 0px;
         }
         @media screen and (max-width:321px) {
             letter-spacing: 1px;

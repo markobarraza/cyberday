@@ -86,7 +86,7 @@
             & .img-bomba {
                 width: 325px;
                 max-width: 325px;
-                margin-right: 8rem;
+                margin-right: 2rem;
                 
                 @media screen and (max-width: 480px) {
                     max-width: 210px;
@@ -95,10 +95,7 @@
                 }
             }
             & .img-premio {
-                // width: 225px;
-                // max-width: 225px;
-                // margin-right: 1rem;
-                padding: 1rem;
+                padding: 0 3rem;
                 @media screen and (max-width: 480px) {
                     margin-right: 0;
                     width: 250px;
@@ -109,6 +106,11 @@
                     width: 250px;
                     max-width: 210px;
                 }
+            }
+            & .btn-bases {
+                color: $blackPolar;
+                font-size: .7rem;
+                text-decoration: underline;
             }
             & .contenido-textual {
                 @media screen and (max-width: 480px) {
@@ -147,17 +149,31 @@
                 h1 {
                     font-size: 1.5rem;
                     font-weight: 600;
-                    padding-bottom: .8rem;
-                    margin-bottom: .8rem;
-                    border-bottom: 1px solid $lineColor;
-                    color: $redPolar;
+                    padding-bottom: 0.1rem;
+                    margin-bottom: 0.1rem;
+                    color: $blackPolar;
                     @media screen and (max-width: 480px) {
                         font-size: 1rem;
                     }
                 }
+                h2 {
+                    font-size: 1.3rem;
+                    font-weight: normal;
+                    color: $blackPolar;
+                    padding-bottom: 0.4rem;
+                    margin-bottom: 0.4rem;
+                    color: #575757;
+                    border-bottom: 1px solid $lineColor;
+                }
+                & .img_bomb {
+                    width: 46px;
+                    float: left;
+                    margin-right: 15px;
+                }
                 h2.description {
                     font-size: 1rem;
                     text-transform: uppercase;
+                    border-bottom: 1px solid $whitePolar;
                     @media screen and (max-width: 480px) {
                         font-size: .85rem;
                     }
@@ -175,6 +191,7 @@
                     margin-bottom: 5px;
                 }
                 h3.price-oferta {
+                    color: $redPolar;
                     font-size: 25px;
                     display: flex;
                     align-content: center;
@@ -262,6 +279,7 @@
         align-items: center;
         position: relative;
         left: -12.5px;
+        padding-bottom: 20px;
         @media screen and (max-width: 480px) {
             left: -8px;
         }
@@ -294,3 +312,8 @@
             }
         }
     }
+// .montane {
+//     background-image: url(../img/montane.jpg);
+//     background-repeat: no-repeat;
+//     background-position: -30% 20%   ;
+// }
